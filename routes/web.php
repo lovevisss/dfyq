@@ -23,3 +23,4 @@ Route::get('post', function()
 {
    return 'post page';
 });
+

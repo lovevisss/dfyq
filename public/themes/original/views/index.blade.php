@@ -11,6 +11,7 @@
     {{Html::style('css/style.css')}}
 </head>
 <body>
+@include('partials._head')
 main page
 </body>
 </html>

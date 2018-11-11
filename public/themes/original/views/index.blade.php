@@ -1,18 +1,14 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('title')</title>
-    @yield('css')
-    {{Html::style('css/normalize.css')}}
-    {{Html::style('css/style.css')}}
-</head>
-<body>
-@include('partials._head')
-main page
-</body>
-</html>
+@extends('layouts.main')
 
+@section('css')
+    {{Html::style('css/swiper/swiper.min.css')}}
+@endsection
+
+
+@section('title')
+    {{env('APP_NAME', '浙江财经大学东方学院|东方园区')}}
+@endsection
+
+@section('body')
+    this is the body
+@endsection

@@ -1,6 +1,11 @@
 $dark-orange: grey !default;
 
 .nav_w{
+  width: auto;
+  padding-right: 10px;
+  z-index: 900;
+  box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
+  position: relative;
 }
 
 .nav{
@@ -55,7 +60,7 @@ $dark-orange: grey !default;
       color: #333333;
     }
     &.current a.navName, a.navName:hover{
-      background-color: $light-orange;
+      font-weight: bold;
     }
   }
 

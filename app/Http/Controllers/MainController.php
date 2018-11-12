@@ -8,6 +8,7 @@ class MainController extends Controller
 {
     public function index()
     {
-        return view('index');
+        $parent_menu = null;
+        return view('index', compact('parent_menu'));
     }
 }

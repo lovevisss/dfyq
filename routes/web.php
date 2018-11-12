@@ -24,3 +24,6 @@ Route::get('post', function()
    return 'post page';
 });
 
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

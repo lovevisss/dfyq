@@ -3,6 +3,7 @@ $dark-orange: grey !default;
 .nav_w{
   width: auto;
   padding-right: 10px;
+  color: #fff;
   z-index: 900;
   box-shadow: 0 4px 8px 0 rgba(7,17,27,.1);
   position: relative;
@@ -56,7 +57,7 @@ $dark-orange: grey !default;
       font-size: 16px;
       display: block;
       text-align: center;
-      font-weight: 600;
+      font-weight: normal;
       color: #333333;
     }
     &.current a.navName, a.navName:hover{

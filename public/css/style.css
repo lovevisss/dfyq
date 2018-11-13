@@ -1,5 +1,97 @@
-body {
-  color: red;
-}
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* delete padding */ }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none;
+    color: #A46105; }
+
+.no-padding {
+  padding: 0; }
+
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+.top-zone {
+  background: url(../images/top.jpg) -190px;
+  height: 239px;
+  position: relative; }
+
+.header_contact {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: #fff; }
+  .header_contact a {
+    color: #fff; }
+
+.nav_w {
+  width: auto;
+  padding-right: 10px;
+  color: #fff;
+  z-index: 900;
+  box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+  position: relative; }
+
+.nav {
+  width: 980px;
+  margin: 0 auto; }
+  .nav ul li {
+    width: 108px;
+    float: left;
+    margin-right: 1px;
+    position: relative; }
+    .nav ul li ul {
+      width: 150px;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 99;
+      background-color: #555;
+      display: none;
+      overflow: hidden; }
+      .nav ul li ul li {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        margin-top: -1px;
+        border-top: 1px solid white; }
+        .nav ul li ul li:hover {
+          background-color: #333; }
+        .nav ul li ul li a {
+          display: block;
+          color: #fff;
+          font-size: 14px;
+          font-weight: normal;
+          padding-left: 22px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          transition: 0.5s;
+          -webkit-transition: 0.5s; }
+          .nav ul li ul li a:hover {
+            font-weight: bold; }
+    .nav ul li a.navName {
+      height: 45px;
+      line-height: 45px;
+      font-size: 16px;
+      display: block;
+      text-align: center;
+      font-weight: normal;
+      color: #333333; }
+    .nav ul li.current a.navName, .nav ul li a.navName:hover {
+      font-weight: bold; }
+
+.navTwo ul li {
+  width: 100px; }
 
 /*# sourceMappingURL=style.css.map */

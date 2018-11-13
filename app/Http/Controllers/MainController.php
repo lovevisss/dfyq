@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use TCG\Voyager\Models\MenuItem;
+
 class MainController extends Controller
 {
     public function index()

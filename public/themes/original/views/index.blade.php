@@ -10,5 +10,31 @@
 @endsection
 
 @section('body')
+    @include('partials._slider')
     this is the body
+@endsection
+
+@section('script')
+    {{Html::script('js/swiper/swiper.min.js')}}
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+
+            pagination:{
+                el:'.swiper-pagination',
+            },
+
+            navigation:{
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay:{
+                delay: 3000,
+            },
+        })
+
+
+    </script>
+
 @endsection

@@ -14,6 +14,7 @@
 <body>
 @include('partials._head')
 @include('partials._nav',['parent_menu' => $parent_menu])
+@yield('slider')
 <div class="container miancontent">
     @yield('body')
 </div>

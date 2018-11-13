@@ -9,7 +9,9 @@
     {{env('APP_NAME', '浙江财经大学东方学院|东方园区')}}
 @endsection
 
-@include('partials._slider')
+@section('slider')
+    @include('partials._slider')
+@endsection
 @section('body')
     this is the body
 @endsection

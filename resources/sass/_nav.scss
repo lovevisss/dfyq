@@ -28,12 +28,16 @@ $dark-orange: grey !default;
       background-color:#555;
       display: none;
       overflow: hidden;
+
+      &:hover{
+        background-color:#333;
+      }
       li {
         width: 150px;
         height: 40px;
         line-height: 40px;
         margin-top: -1px;
-        border-top: 1px solid $dark-orange;
+        border-top: 1px solid $white;
         a{
           display: block;
           color: #fff;
@@ -47,6 +51,7 @@ $dark-orange: grey !default;
           -webkit-transition: 0.5s;
           &:hover{
             font-weight: bold;
+
           }
         }
       }

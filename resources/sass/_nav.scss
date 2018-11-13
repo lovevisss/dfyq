@@ -29,15 +29,17 @@ $dark-orange: grey !default;
       display: none;
       overflow: hidden;
 
-      &:hover{
-        background-color:#333;
-      }
+
       li {
         width: 150px;
         height: 40px;
         line-height: 40px;
         margin-top: -1px;
         border-top: 1px solid white;
+
+        &:hover{
+          background-color:#333;
+        }
         a{
           display: block;
           color: #fff;

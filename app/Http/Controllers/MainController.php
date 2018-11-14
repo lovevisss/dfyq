@@ -16,6 +16,6 @@ class MainController extends Controller
     public function get_celebrity()
     {
         $celebrities = Celebrity::all();
-        return view('page.celebrity', compact('celebrities'));
+        return view('pages.celebrity', compact('celebrities'));
     }
 }

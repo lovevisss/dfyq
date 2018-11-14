@@ -16,6 +16,7 @@ class MainController extends Controller
     public function get_celebrity()
     {
         $celebrities = Celebrity::all();
+        $parent_menu = MenuItem::where('id', '=', 16)->first();
         return view('pages.celebrity', compact('celebrities'));
     }
 }

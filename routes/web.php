@@ -13,7 +13,7 @@
 
 Route::get('/',['as' => 'index', 'uses' => 'MainController@index'] );
 
-
+Route::get('celebrity', ['as' => 'get_celebrity', 'uses' => 'MainController@get_celebrity']);
 
 Route::get('test', function(){
     return view('index');

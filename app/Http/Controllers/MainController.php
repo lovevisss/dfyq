@@ -17,6 +17,6 @@ class MainController extends Controller
     {
         $celebrities = Celebrity::all();
         $parent_menu = MenuItem::where('id', '=', 16)->first();
-        return view('pages.celebrity', compact('celebrities'));
+        return view('pages.celebrity', compact('celebrities', 'parent_menu'));
     }
 }

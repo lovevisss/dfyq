@@ -21,6 +21,9 @@ a {
   height: 0;
   overflow: hidden; }
 
+.l {
+  float: left; }
+
 .top-zone {
   background: url(../images/top.jpg) -190px;
   height: 200px;
@@ -93,7 +96,8 @@ a {
   width: 100px; }
 
 .swiper-container {
-  height: 350px; }
+  height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1); }
   .swiper-container a span {
     width: 100%;
     height: 40px;

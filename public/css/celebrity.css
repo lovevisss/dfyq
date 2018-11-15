@@ -1,0 +1,44 @@
+.celebrity-item {
+  position: absolute;
+  margin: 12px;
+  padding: 36px 48px;
+  width: 368px;
+  background: #FFF;
+  box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box; }
+  .celebrity-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.1); }
+
+.maincontent {
+  position: relative; }
+
+.celebrity-header-img {
+  display: block;
+  margin: 0 auto 12px;
+  width: 96px;
+  height: 96px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; }
+
+.celebrity-name {
+  display: block;
+  margin: 0 auto;
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #4D555D;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center; }
+
+.celebrity-desc {
+  font-size: 14px;
+  color: #4D555D;
+  line-height: 28px;
+  word-break: break-word; }
+
+/*# sourceMappingURL=celebrity.css.map */

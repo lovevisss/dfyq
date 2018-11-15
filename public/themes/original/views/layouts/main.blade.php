@@ -13,7 +13,7 @@
 </head>
 <body>
 @include('partials._head')
-@include('partials._nav',['parent_menu' => $parent_menu])
+@include('partials._nav',['parent_menu' => $parent_menu, 'title' => $title])
 @yield('slider')
 <div class="container maincontent">
     @yield('body')

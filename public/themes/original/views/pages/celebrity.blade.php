@@ -15,7 +15,7 @@
     this is the body
     @foreach($celebrities as $index =>$celebrity)
 
-        <div class="celebrity-item l" style="left: {{$index*33}}%; top: 0px; z-index: 0;">
+        <div class="celebrity-item l" style="left: {{($index%3)*33}}%; top: {{floor(index/3)}}px; z-index: 0;">
             <a href="#" target="_blank" class="celebrity-header-img" style="background-image:url({{'storage/'.$celebrity->image}});"></a>
             <a href="//www.imooc.com/t/5027812" target="_blank" class="teacher-nickname">{{$celebrity->name}}</a>
             <!-- tag -->

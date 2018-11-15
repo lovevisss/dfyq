@@ -1,4 +1,6 @@
 <ul class="clearfix">
+
+   @if($items)
     @foreach($items as $key => $menu_item)
         <li class="@if($menu_item->title == $options->parent_menu->title)
                 current
@@ -13,4 +15,5 @@
             @endif
         </li>
     @endforeach
+    @endif
 </ul>

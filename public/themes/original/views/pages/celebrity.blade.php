@@ -17,14 +17,14 @@
 
         <div class="celebrity-item l" style="left: {{($index%3)*33}}%; top: {{floor($index/3)*400}}px; z-index: 0;">
             <a href="#" target="_blank" class="celebrity-header-img" style="background-image:url({{'storage/'.$celebrity->image}});"></a>
-            <a href="//www.imooc.com/t/5027812" target="_blank" class="teacher-nickname">{{$celebrity->name}}</a>
+            <a href="//www.imooc.com/t/5027812" target="_blank" class="celebrity-name">{{$celebrity->name}}</a>
             <!-- tag -->
-            <div class="tag-box clearfix">
-                <span class="tag-item l">HTML/CSS</span>
-                <span class="tag-item l">JavaScript</span>
-                <span class="tag-item l">Node.js</span>
-                <span class="tag-item l">Vue.js</span>
-            </div>
+            {{--<div class="tag-box clearfix">--}}
+                {{--<span class="tag-item l">HTML/CSS</span>--}}
+                {{--<span class="tag-item l">JavaScript</span>--}}
+                {{--<span class="tag-item l">Node.js</span>--}}
+                {{--<span class="tag-item l">Vue.js</span>--}}
+            {{--</div>--}}
             <div class="teacher-desc">{{$celebrity->desc}}</div>
             {{--<!--新增-->--}}
             {{--<div class="teacher-course js-course-toggle" style="display: none;">--}}

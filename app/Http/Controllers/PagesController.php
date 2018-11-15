@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use TCG\Voyager\Models\Page;
-
+use TCG\Voyager\Models\MenuItem;
 class PagesController extends Controller
 {
     /**
@@ -48,9 +48,9 @@ class PagesController extends Controller
     {
         $page = Page::where('id', '=', $id)->first();
         $title = $page->menu_name;
-        $menu = TCG\Voyager\Models\MenuItem::where('title', $title)->first();
-        $menus = TCG\Voyager\Models\MenuItem::where('parent_id', $menu->parent_id)->get();
-        $parent_menu = TCG\Voyager\Models\MenuItem::where('id', $menu->parent_id)->first();
+        $menu = MenuItem::where('title', $title)->first();
+        $menus = MenuItem::where('parent_id', $menu->parent_id)->get();
+        $parent_menu = MenuItem::where('id', $menu->parent_id)->first();
         return view('pages.page', compact('page', 'title', 'menu', 'menus', 'parent_menu'));
     }
 

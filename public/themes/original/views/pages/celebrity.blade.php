@@ -7,12 +7,16 @@
     {{env('APP_NAME', '浙江财经大学东方学院|东方园区')}}
 @endsection
 
+@section('css')
+    {{Html::style('css/celebrity.css')}}
+@endsection
+
 @section('body')
     this is the body
     @foreach($celebrities as $celebrity)
 
         <div class="celebrity-item l" style="left: 0px; top: 0px; z-index: 0;">
-            <a href="#" target="_blank" class="celebrity-header-img" style="background-image:url({{$celebrity->image}});"></a>
+            <a href="#" target="_blank" class="celebrity-header-img" style="background-image:url({{'storage/'.$celebrity->image}});"></a>
             <a href="//www.imooc.com/t/5027812" target="_blank" class="teacher-nickname">{{$celebrity->name}}</a>
             <!-- tag -->
             <div class="tag-box clearfix">

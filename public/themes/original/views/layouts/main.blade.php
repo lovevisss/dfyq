@@ -20,6 +20,7 @@
 </div>
 </body>
 
+@include('partials._footer')
 
 {{Html::script('js/jquery-1.11.1.min.js')}}
 {{Html::script('js/navbar.js')}}

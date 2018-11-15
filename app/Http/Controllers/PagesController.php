@@ -45,7 +45,12 @@ class PagesController extends Controller
      */
     public function show($id)
     {
-        return $id;
+        $page = TCG\Voyager\Models\Page::where('id', '=', $id)->first();
+        $title = $page->menu_name;
+        $menu = TCG\Voyager\Models\MenuItem::where('title', $title)->first();
+        $menus = TCG\Voyager\Models\MenuItem::where('parent_id', $menu->parent_id)->get();
+        $parent_menu = TCG\Voyager\Models\MenuItem::where('id', $menu->parent_id)->first();
+        return view('pages.page', compact('page', 'title', 'menu', 'menus', 'parent_menu'));
     }
 
     /**

@@ -15,6 +15,8 @@ Route::get('/',['as' => 'index', 'uses' => 'MainController@index'] );
 
 Route::get('celebrity', ['as' => 'get_celebrity', 'uses' => 'MainController@get_celebrity']);
 
+Route::get('page/{id}', ['as' => 'page', 'uses' => 'PagesController@show']);
+
 Route::get('test', function(){
     return view('index');
 });

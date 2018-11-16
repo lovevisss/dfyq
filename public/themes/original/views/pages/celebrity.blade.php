@@ -12,6 +12,7 @@
 @endsection
 
 @section('body')
+    @include('blocks._secondarynavbar')
     @foreach($celebrities as $index =>$celebrity)
 
         <div class="celebrity-item l">

@@ -14,7 +14,7 @@
 @section('body')
     @foreach($celebrities as $index =>$celebrity)
 
-        <div class="celebrity-item l" style="left: {{($index%3)*30}}%; top: {{floor($index/3)*300}}px; z-index: 0;">
+        <div class="celebrity-item l">
             <a href="#" target="_blank" class="celebrity-header-img" style="background-image:url({{'storage/'.$celebrity->image}});"></a>
             <a href="//www.imooc.com/t/5027812" target="_blank" class="celebrity-name">{{$celebrity->name}}</a>
             <!-- tag -->

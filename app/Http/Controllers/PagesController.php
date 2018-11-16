@@ -51,7 +51,7 @@ class PagesController extends Controller
         $menu = MenuItem::where('title', $title)->first();
         $menus = MenuItem::where('parent_id', $menu->parent_id)->get();
         $parent_menu = MenuItem::where('id', $menu->parent_id)->first();
-        dd($title);
+//        dd($title);
         return view('pages.page', compact('page','title', 'menu', 'menus', 'parent_menu'));
     }
 

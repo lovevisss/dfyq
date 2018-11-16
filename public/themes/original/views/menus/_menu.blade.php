@@ -30,6 +30,6 @@
                 {{--@endif--}}
             {{--</li>--}}
         {{--@endforeach--}}
-        {{dd($title)}}
+        {{dd($options)}}
     @endif
 </ul>

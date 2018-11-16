@@ -24,7 +24,7 @@
                 {{--<span class="tag-item l">Node.js</span>--}}
                 {{--<span class="tag-item l">Vue.js</span>--}}
             {{--</div>--}}
-            <div class="celebrity-desc">{{$celebrity->desc}}</div>
+            <div class="celebrity-desc">任职时间:{{$celebrity->year}} - {{$celebrity->year+1}}</div>
             {{--<!--新增-->--}}
             {{--<div class="teacher-course js-course-toggle" style="display: none;">--}}
                 {{--<!--<h6 class="teacher-course-title">讲师力荐课程</h6>-->--}}

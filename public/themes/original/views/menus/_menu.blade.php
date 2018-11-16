@@ -1,10 +1,9 @@
 <ul class="clearfix">
 
-   @if($options->parent_menu)
             @foreach($items as $key => $menu_item)
-                <li class="@if($menu_item->title == $options->parent_menu->title)
+                <li class="@if($menu_item->title == $options->parent_menu->title)  //option 是从menu中传入的参数
                         current
-        @endif"><a class="navName" href={{$menu_item->link()}} >{{ $menu_item->title }}</a>
+            @endif"><a class="navName" href={{$menu_item->link()}} >{{ $menu_item->title }}</a>
                     @if($menu_item->children)
                         <ul>
                             @foreach($menu_item->children as $child)
@@ -15,21 +14,5 @@
                     @endif
                 </li>
             @endforeach
-   @else
-        {{--@foreach($items as $key => $menu_item)--}}
-            {{--<li class="@if($menu_item->title == $title)--}}
-                    {{--current--}}
-{{--@endif"><a class="navName" href={{$menu_item->link()}} >{{ $menu_item->title }}</a>--}}
-                {{--@if($menu_item->children)--}}
-                    {{--<ul>--}}
-                        {{--@foreach($menu_item->children as $child)--}}
-                            {{--<li><a href={{$child->link()}}>{{$child->title}}</a>	</li>--}}
-                        {{--@endforeach--}}
-                    {{--</ul>--}}
 
-                {{--@endif--}}
-            {{--</li>--}}
-        {{--@endforeach--}}
-        {{dd($options)}}
-    @endif
 </ul>

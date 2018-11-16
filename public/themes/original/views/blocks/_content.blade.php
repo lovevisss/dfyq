@@ -25,6 +25,7 @@
 @endsection
 
 @section('paginate')
+    @if($type == 'post')
     <div style="margin-top: 1em">
         <div class="col-md-4" style="text-align: center">
             <a href="{{route('post', App\Helper\StringHelper::getPrevPostId($data->id))}}" class="btn btn-primary">上一篇</a>
@@ -38,4 +39,5 @@
 
         </div>
     </div>
+    @endif
 @endsection

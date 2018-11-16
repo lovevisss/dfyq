@@ -7,7 +7,7 @@
 @section('body')
     @include('blocks._secondarynavbar')
 
-    @include('blocks._content', ['data' => $page])
+    @include('blocks._content', ['data' => $page, 'type' => 'page'])
 
 
 @endsection

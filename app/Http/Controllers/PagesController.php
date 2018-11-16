@@ -47,10 +47,10 @@ class PagesController extends Controller
     public function show($id)
     {
         $page = Page::where('id', '=', $id)->first();
-        $title = $page->menu_name;
-        $menu = MenuItem::where('title', $title)->first();
-        $menus = MenuItem::where('parent_id', $menu->parent_id)->get();
-        $parent_menu = MenuItem::where('id', $menu->parent_id)->first();
+        $title = $page->menu_name;   //当前栏目名
+        $menu = MenuItem::where('title', $title)->first();  //当前栏目
+        $menus = MenuItem::where('parent_id', $menu->parent_id)->get(); //父目录下的子栏目
+        $parent_menu = MenuItem::where('id', $menu->parent_id)->first(); //父目录
 //        dd($title);
         return view('pages.page', compact('page','title', 'menu', 'menus', 'parent_menu'));
     }

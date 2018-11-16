@@ -19,6 +19,8 @@ class MainController extends Controller
         $celebrities = Celebrity::all();
         $parent_menu = MenuItem::where('id', '=', 16)->first();
         $title = "历届秘书长";
-        return view('pages.celebrity', compact('celebrities', 'parent_menu', 'title'));
+        $menu = MenuItem::where('title', $title)->first();  //当前栏目
+        $menus = MenuItem::where('parent_id', $menu->parent_id)->get(); //父目录下的子栏目
+        return view('pages.celebrity', compact('celebrities', 'parent_menu', 'title','menus'));
     }
 }

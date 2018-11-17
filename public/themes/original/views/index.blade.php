@@ -55,9 +55,9 @@
             pagination: {
                 el: '.swiper-pagination',
             },
-            // autoplay:{
-            //     delay: 2000,
-            // },
+            autoplay:{
+                delay: 2000,
+            },
         });
 
 

@@ -19,6 +19,7 @@
     @yield('body')
 </div>
 </body>
+<div class="clear"></div>
 @yield('cubeswiper')
 @include('partials._footer')
 

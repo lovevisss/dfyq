@@ -5,7 +5,7 @@
     col-sm-6  small_list
 @stop
 
-@section('title')
+@section('title_name')
     {{$notice_posts[0]->category->name}}
 @endsection
 

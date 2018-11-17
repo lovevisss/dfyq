@@ -26,7 +26,8 @@
                     @endif
                 </strong>
             </a></span>
-            <span class="fbody"><p>{!! App\Helper\StringHelper::substrtitle($new->body,120) !!}</p></span>
+            <div class="clearfix">	</div>
+            <span class="fbody"><p>{!! App\Helper\StringHelper::substrtitle($new->body,80) !!}</p></span>
         </li>
     @endforeach
 @stop

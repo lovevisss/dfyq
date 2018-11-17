@@ -27,7 +27,7 @@
                 </strong>
             </a></span>
             <div class="clearfix">	</div>
-            <span class="fbody"><p>{{App\Helper\StringHelper::substrtitle(strip_tags($new->body),80) }} </p></span>
+            <span class="fbody"><p>{{App\Helper\StringHelper::substrtitle(strip_tags(htmlspecialchars($new->body)),80) }} </p></span>
         </li>
     @endforeach
 @stop

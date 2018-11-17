@@ -116,4 +116,44 @@ a {
 .slider_image {
   width: -webkit-fill-available; }
 
+.footer_w {
+  height: 200px;
+  background: #666; }
+
+.footer {
+  width: 1200px;
+  margin: 0 auto; }
+
+.clearfix {
+  zoom: 1; }
+
+.footerLogo {
+  width: 280px;
+  float: left;
+  margin: 68px 175px 0 0; }
+
+.footerInfo {
+  float: left;
+  margin-top: 25px;
+  color: #fff; }
+
+.footerInfo_copy {
+  font-weight: bold;
+  font-size: 14px; }
+
+.footerEwm {
+  float: right;
+  margin-top: 35px;
+  color: #fff; }
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+.footerEwm_name {
+  text-align: center;
+  padding: 5px 0;
+  color: #bfcbc3; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,14 @@
 .celebrity-item {
-  position: absolute;
   margin: 12px;
   padding: 36px 48px;
-  width: 368px;
+  width: 289px;
+  height: 250px;
   background: #FFF;
   box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
   border-radius: 8px;
   box-sizing: border-box; }
   .celebrity-item:hover {
-    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.1); }
+    box-shadow: 0 8px 16px 0 rgba(7, 17, 27, 0.2); }
 
 .maincontent {
   position: relative; }
@@ -39,6 +39,7 @@
   font-size: 14px;
   color: #4D555D;
   line-height: 28px;
-  word-break: break-word; }
+  word-break: break-word;
+  text-align: center; }
 
 /*# sourceMappingURL=celebrity.css.map */

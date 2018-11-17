@@ -15,7 +15,7 @@ Route::get('/',['as' => 'index', 'uses' => 'MainController@index'] );
 Route::get('celebrity', ['as' => 'get_celebrity', 'uses' => 'MainController@get_celebrity']);
 Route::get('page/{id}', ['as' => 'page', 'uses' => 'PagesController@show']);
 Route::get('post/{id}', ['as' => 'post', 'uses' => 'PostsController@show']);
-
+Route::get('category/{id}', ['as' => 'category', 'uses' => 'MainController@get_category']);
 Route::get('test', function(){
     return view('index');
 });

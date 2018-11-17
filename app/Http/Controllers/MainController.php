@@ -24,4 +24,9 @@ class MainController extends Controller
         $menus = MenuItem::where('parent_id', $menu->parent_id)->get(); //父目录下的子栏目
         return view('pages.celebrity', compact('celebrities', 'parent_menu' ,'menus','title'));
     }
+
+    public function get_category($id)
+    {
+        return $id;
+    }
 }

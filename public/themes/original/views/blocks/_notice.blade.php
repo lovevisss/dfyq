@@ -6,7 +6,7 @@
 @stop
 
 @section('title')
-    {{$notice_posts[0]->category->name}}
+    {{--{{$notice_posts[0]->category->name}}--}}
 @endsection
 
 @section('link')

@@ -30,4 +30,4 @@
     {{--@endforeach--}}
 {{--@stop--}}
 
-{{dd($notice_posts)}}
+{{dd($notice_posts[0])}}

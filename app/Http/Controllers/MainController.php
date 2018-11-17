@@ -22,6 +22,6 @@ class MainController extends Controller
         $title = "历届秘书长";
         $menu = MenuItem::where('title', $title)->first();  //当前栏目
         $menus = MenuItem::where('parent_id', $menu->parent_id)->get(); //父目录下的子栏目
-        return view('pages.celebrity', compact('celebrities', 'parent_menu' ,'menus'));
+        return view('pages.celebrity', compact('celebrities', 'parent_menu' ,'menus','title'));
     }
 }

@@ -1,0 +1,2 @@
+this is notice area
+

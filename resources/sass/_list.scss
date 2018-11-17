@@ -123,11 +123,16 @@
   position: absolute;
 }
 
-.post-newday, .post-newmonth{
+.post-newday{
   background: #1AB596;
+  top: 5px;
+  height: 40px;
+  line-height: 44px;
+  font-size: 26px;
 }
 
 .post-newmonth{
+  background: #16A086;
   height: 25px;
   line-height: 25px;
   top: 45px;

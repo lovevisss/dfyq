@@ -52,9 +52,7 @@
                 modifier: 1,
                 slideShadows : true,
             },
-            pagination: {
-                el: '.swiper-pagination',
-            },
+
             autoplay:{
                 delay: 2000,
             },

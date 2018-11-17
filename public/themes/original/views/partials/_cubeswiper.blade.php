@@ -1,4 +1,5 @@
 <div class="cubeswiper-container">
+    <h3>园区风采</h3>
     <div class="swiper-wrapper">
 
         @foreach($sceneries as $scenery)
@@ -11,5 +12,4 @@
 
     </div>
     <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
 </div>

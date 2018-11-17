@@ -5,6 +5,10 @@
     col-sm-6  small_list
 @stop
 
+@section('title')
+    {{$notice_posts[0]->category->name}}
+@endsection
+
 @section('link')
     {{route('category', ['id' => 1])}}
 @endsection

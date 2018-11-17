@@ -112,6 +112,16 @@
     }
   }
 }
+.post-month, .post-newmonth, .post-day, .post-newday {
+  text-align: center;
+  display: block;
+  width: 60px;
+  color: #fff;
+  font-family: Arial,Times,serif;
+  font-weight: normal;
+  left: 0;
+  position: absolute;
+}
 
 .post-newday, .post-newmonth{
   background: #1AB596;

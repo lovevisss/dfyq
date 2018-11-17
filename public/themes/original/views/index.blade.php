@@ -17,6 +17,10 @@
     {{--{{dd($sceneries)}}--}}
 @endsection
 
+@section('cubeswiper')
+    @include('partials._cubeswiper')
+@endsection
+
 @section('script')
     {{Html::script('js/swiper/swiper.min.js')}}
     <script type="text/javascript">

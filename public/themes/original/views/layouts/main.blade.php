@@ -19,7 +19,7 @@
     @yield('body')
 </div>
 </body>
-
+@yield('cubeswiper')
 @include('partials._footer')
 
 {{Html::script('js/jquery-1.11.1.min.js')}}

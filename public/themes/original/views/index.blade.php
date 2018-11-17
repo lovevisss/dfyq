@@ -13,11 +13,7 @@
     @include('partials._slider')
 @endsection
 @section('body')
-    this is the body
-    {{--{{dd($sceneries)}}--}}
-    <div class="col-sm-6">
          @include('blocks._notice')
-    </div>
 @endsection
 
 @section('cubeswiper')

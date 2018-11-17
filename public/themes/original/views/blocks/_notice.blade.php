@@ -2,7 +2,7 @@
 
 
 @section('outerclass')
-    col-sm-6  small_list
+    col-sm-6
 @stop
 
 @section('title_name')

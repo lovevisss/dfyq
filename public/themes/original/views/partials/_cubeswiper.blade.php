@@ -3,7 +3,7 @@
 
         @foreach($sceneries as $scenery)
 
-        <div class="swiper-slide cube" style="background-image:url({{'storage/'.$scenery->image}})"></div>
+        <div class="swiper-slide cube" style="background-image:url({{'storage/'.$scenery->images}})"></div>
 
         @endforeach
 

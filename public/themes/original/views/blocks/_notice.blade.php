@@ -17,7 +17,7 @@
     @foreach($notice_posts as $new)
 
         <li class="">
-            <span class="post-newday">{{date_format($data->created_at,"d")}}</span><span class="post-newmonth">{{date_format($data->created_at,"Y/m")}}</span>
+            <span class="post-newday">{{date_format($new->created_at,"d")}}</span><span class="post-newmonth">{{date_format($new->created_at,"Y/m")}}</span>
             <span class="ftitle"><a href="post/{{$new->id}}" title="{{$new->title}}">
                 <i class="glyphicon glyphicon-triangle-right"></i>
                 <strong>{{App\Helper\StringHelper::substrtitle($new->title,30)}}

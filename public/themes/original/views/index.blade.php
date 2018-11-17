@@ -14,7 +14,7 @@
 @endsection
 @section('body')
     this is the body
-    {{dd($sceneries)}}
+    {{--{{dd($sceneries)}}--}}
 @endsection
 
 @section('script')

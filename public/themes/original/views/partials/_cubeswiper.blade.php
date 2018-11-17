@@ -4,7 +4,7 @@
         @foreach($sceneries as $scenery)
 
         <div class="swiper-slide cube" style="background-image:url({{'storage/'.$scenery->images}})">
-            <div class="celebrity-desc">{{$scenery->name}}</div>
+            <div class="scene-name">{{$scenery->name}}</div>
         </div>
 
         @endforeach

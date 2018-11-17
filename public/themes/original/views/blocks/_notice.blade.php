@@ -20,17 +20,13 @@
             <span class="post-newday">26</span><span class="post-newmonth">2018/06</span>
             <span class="ftitle"><a href="post/{{$new->id}}" title="{{$new->title}}">
                 <i class="glyphicon glyphicon-triangle-right"></i>
-                <strong>{{App\Helper\StringHelper::substrtitle($new->title,10)}}
+                <strong>{{App\Helper\StringHelper::substrtitle($new->title,30)}}
                     @if($new->created_at->diffInHours(\Carbon\Carbon::now()) < 72)
                         <span class="new_info">new</span>
                     @endif
                 </strong>
             </a></span>
-            <span class="fbody"><p>{{App\Helper\StringHelper::substrtitle($new->body,20)}}</p></span>
+            <span class="fbody"><p>{!! App\Helper\StringHelper::substrtitle($new->body,50) !!}</p></span>
         </li>
-        <li>
-
-        </li>
-        <div class="clearfix">	</div>
     @endforeach
 @stop

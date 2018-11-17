@@ -13,7 +13,7 @@ use TCG\Voyager\Models\Post;
 class NoticeComposer {
     public function compose(View $view)
     {
-        $view->with('notice_posts', Post::orderBy('created_at', 'DESC')->take(5)->get());
+        $view->with('notice_posts', Post::orderBy('created_at', 'DESC')->take(2)->get());
     }
 }
 

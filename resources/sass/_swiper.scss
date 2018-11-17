@@ -17,7 +17,21 @@
     background-color: rgba(0,0,0,.7);
   }
 }
+.cubeswiper-container
+{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
+}
+
+
+.cube{
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
 
 .swiper-pagination{
   text-align: right;

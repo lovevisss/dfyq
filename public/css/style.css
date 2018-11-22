@@ -24,6 +24,9 @@ a {
 .l {
   float: left; }
 
+.maincontent {
+  margin-top: 40px; }
+
 .top-zone {
   background: url(../images/top.jpg) -190px;
   height: 200px;
@@ -110,6 +113,25 @@ a {
     left: 0;
     background-color: rgba(0, 0, 0, 0.7); }
 
+.cubeswiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.cube {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px; }
+
+.scene-name {
+  font-size: 14px;
+  color: #4D555D;
+  line-height: 28px;
+  word-break: break-word;
+  text-align: center;
+  margin-top: 300px; }
+
 .swiper-pagination {
   text-align: right; }
 
@@ -155,5 +177,258 @@ a {
   text-align: center;
   padding: 5px 0;
   color: #bfcbc3; }
+
+.small_list {
+  height: 326px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px #ffcb99 solid;
+  transition: 0.8;
+  -webkit-transition: 0.8;
+  padding: 0 20px;
+  margin: 0 45px; }
+
+.list_witch_pic {
+  height: 400px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px #ffcb99 solid;
+  transition: 0.8;
+  -webkit-transition: 0.8;
+  margin-right: 50px; }
+
+.rolling_list {
+  height: 400px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px #ffcb99 solid;
+  transition: 0.8;
+  -webkit-transition: 0.8;
+  float: right;
+  padding: 0 0; }
+
+.contact_list {
+  height: 400px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px #ffcb99 solid;
+  transition: 0.8;
+  -webkit-transition: 0.8;
+  float: right;
+  margin-top: 90px; }
+  .contact_list .contactInfo {
+    padding: 15px; }
+
+.list_from_other_web {
+  height: 400px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px #ffcb99 solid;
+  transition: 0.8;
+  -webkit-transition: 0.8;
+  margin-top: 40px; }
+
+.in_noticeTitle {
+  height: 55px;
+  line-height: 55px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0;
+  background: #0568A4 0 0 repeat; }
+
+.in_noticeList {
+  height: 290px;
+  padding: 0 15px;
+  margin: 5px 0;
+  overflow: hidden; }
+
+.in_noticeMore {
+  padding: 8px 0;
+  margin-top: -1px;
+  text-align: center;
+  border-top: 1px solid #e1e1e1; }
+  .in_noticeMore a {
+    display: inline-block;
+    width: 80px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0568A4; }
+
+.in_title {
+  border-bottom: 3px solid #ebebeb;
+  position: relative; }
+
+.in_titleName {
+  padding: 10px 0;
+  display: inline-block;
+  font-size: 20px;
+  color: #282828; }
+
+.in_titleLine {
+  height: 3px;
+  width: 50%;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: #0568A4; }
+
+.in_titleMore {
+  float: right;
+  font-size: 14px;
+  color: #0568A4;
+  margin-top: 20px;
+  padding-right: 20px;
+  position: relative; }
+  .in_titleMore i {
+    transition: 0.3s;
+    -webkit-transition: 0.3s; }
+  .in_titleMore:hover i {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg); }
+
+.in_itemImg {
+  width: 378px;
+  height: 134px;
+  margin-top: 20px;
+  overflow: hidden; }
+  .in_itemImg a:hover img {
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transform: scale(1.04, 1.04); }
+
+.post-month, .post-newmonth, .post-day, .post-newday {
+  text-align: center;
+  display: block;
+  width: 60px;
+  color: #fff;
+  font-family: Arial,Times,serif;
+  font-weight: normal;
+  left: 0;
+  position: absolute; }
+
+.post-newday {
+  background: #85cffc;
+  height: 45px;
+  line-height: 44px;
+  font-size: 26px; }
+
+.post-newmonth {
+  background: #50b5f9;
+  height: 25px;
+  line-height: 25px;
+  top: 45px;
+  font-size: 13px; }
+
+.ftitle {
+  display: inline-block;
+  margin-left: 80px;
+  font-size: 16px;
+  padding: 1px 0 0 0;
+  font-family: "Microsoft YaHei",arial;
+  float: left; }
+
+.fbody {
+  display: inline-block;
+  line-height: 24px;
+  margin-left: 80px;
+  font-size: 14px;
+  color: #999;
+  padding: 3px 0 0 0;
+  float: left; }
+
+.in_newsList, .in_noticeList {
+  margin-top: 10px; }
+  .in_newsList .new_info, .in_noticeList .new_info {
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 10px;
+    padding: 5px;
+    background-color: #FF6C00;
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    font-size: 12px; }
+  .in_newsList ul, .in_noticeList ul {
+    overflow: hidden; }
+    .in_newsList ul li, .in_noticeList ul li {
+      list-style: none;
+      margin: 0px 10px 30px 0px;
+      overflow: hidden;
+      position: relative;
+      min-height: 70px; }
+      .in_newsList ul li a, .in_noticeList ul li a {
+        font-size: 14px;
+        display: block;
+        position: relative; }
+        .in_newsList ul li a i, .in_noticeList ul li a i {
+          font-size: 12px; }
+        .in_newsList ul li a:hover strong, .in_noticeList ul li a:hover strong {
+          transform: translateX(8px); }
+      .in_newsList ul li strong, .in_noticeList ul li strong {
+        display: inline-block;
+        font-weight: normal;
+        transition: 0.5s;
+        -webkit-transition: 0.5s; }
+
+.content {
+  width: 1200px;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 40px auto 0; }
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff; }
+
+.no-padding {
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.slider ul li a.active {
+  color: #fff;
+  background: #0568A4;
+  border-radius: 8px 0 0 8px; }
+
+.slider ul li a {
+  position: relative;
+  display: block;
+  height: 48px;
+  font-size: 16px;
+  line-height: 48px;
+  color: #787d82;
+  padding-left: 64px;
+  text-align: left; }
+
+a {
+  text-decoration: none; }
+
+.content .breadcrumb {
+  line-height: 40px;
+  height: 40px;
+  background: #0568A4;
+  text-indent: 20px;
+  padding: 0 0;
+  color: white; }
+
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px; }
+
+p {
+  margin: 0 0 10px; }
 
 /*# sourceMappingURL=style.css.map */

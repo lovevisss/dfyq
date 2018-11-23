@@ -22,6 +22,13 @@ Route::get('night', function ()
    $night = \App\NightEnroll::find(1);
    return $night->user->name;
 });
+
+
+Route::get('user', function()
+{
+    $user = \App\User::find(1);
+    return $user->nightenrolls;
+});
 Route::get('test', function(){
     return view('index');
 });

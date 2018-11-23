@@ -33,6 +33,14 @@ Route::get('test', function(){
     return view('index');
 });
 
+Route::get('class', function ()
+{
+    $enrolls = \App\Uniclass::find(1);
+    foreach ($enrolls as $enroll)
+        echo $enrolls->name;
+//    return $enrolls->
+});
+
 Route::get('post', function()
 {
    return 'post page';

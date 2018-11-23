@@ -36,8 +36,7 @@ Route::get('test', function(){
 Route::get('class', function ()
 {
     $enrolls = \App\Uniclass::find(1);
-    foreach ($enrolls as $enroll)
-        echo $enrolls->name;
+    dd($enrolls);
 //    return $enrolls->
 });
 

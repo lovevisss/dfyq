@@ -10,4 +10,9 @@ class Nightenroll extends Model
     public function user(){
         return $this->belongsTo('App\User');
     }
+
+    public function members(){
+        return $this->belongsToMany('App\User');
+    }
+
 }

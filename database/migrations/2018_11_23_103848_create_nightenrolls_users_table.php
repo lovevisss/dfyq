@@ -15,6 +15,8 @@ class CreateNightenrollsUsersTable extends Migration
     {
         Schema::create('nightenroll_users', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
+            $table->integer('nightenroll_id');
             $table->timestamps();
         });
     }

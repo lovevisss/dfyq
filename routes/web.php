@@ -19,7 +19,7 @@ Route::get('category/{id}', ['as' => 'category', 'uses' => 'MainController@get_c
 
 Route::get('night', function ()
 {
-   $night = \App\NightEnroll::find(1);
+   $night = \App\Nightenroll::find(1);
    return $night->members;
 });
 

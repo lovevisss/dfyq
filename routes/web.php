@@ -33,10 +33,10 @@ Route::get('test', function(){
     return view('index');
 });
 
-Route::get('class', function ()
+Route::get('class', function()
 {
     $enrolls = \App\Uniclass::find(1);
-    dd($enrolls);
+    return $enrolls;
 //    return $enrolls->
 });
 

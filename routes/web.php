@@ -16,6 +16,12 @@ Route::get('celebrity', ['as' => 'get_celebrity', 'uses' => 'MainController@get_
 Route::get('page/{id}', ['as' => 'page', 'uses' => 'PagesController@show']);
 Route::get('post/{id}', ['as' => 'post', 'uses' => 'PostsController@show']);
 Route::get('category/{id}', ['as' => 'category', 'uses' => 'MainController@get_category']);
+
+Route::get('night', function ()
+{
+   $night = \App\NightEnroll::find(1);
+   return $night->user->name;
+});
 Route::get('test', function(){
     return view('index');
 });

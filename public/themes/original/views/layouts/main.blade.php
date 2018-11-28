@@ -12,6 +12,7 @@
     {{Html::style('css/style.css')}}
 </head>
 <body>
+@include('blocks._back')
 @include('partials._head')
 @include('partials._nav',['parent_menu' => $parent_menu])
 @yield('slider')

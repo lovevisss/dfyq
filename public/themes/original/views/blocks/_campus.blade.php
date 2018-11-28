@@ -1,6 +1,6 @@
 
 
-<div class="col-sm-6 rolling_list">
+<div class="col-sm-4 rolling_list">
     <h3 class="in_noticeTitle">{{$campus_posts[0]->category->name}}</h3>
     <div class="in_noticeList">
         <ul>

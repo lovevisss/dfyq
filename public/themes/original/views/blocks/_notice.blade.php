@@ -2,7 +2,7 @@
 
 
 @section('outerclass')
-    col-sm-6
+    col-sm-8
 @stop
 
 @section('title_name')

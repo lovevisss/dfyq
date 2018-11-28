@@ -29,22 +29,10 @@ body{
   //background-color: #f0f1f6;
 
 }
-.divBackgroundImage{
-  background-image: url('../images/bg.jpg');
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -1;
-  opacity: .5;
-}
+
 body::before{
+  background: url('../images/bg.jpg');
+  //opacity: 0.2;
   background-attachment: fixed;
 }
 

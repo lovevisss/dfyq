@@ -13,6 +13,7 @@
     @include('partials._slider')
 @endsection
 @section('body')
+         @include('blocks._back')
          @include('blocks._notice')
          @include('blocks._campus')
 @endsection

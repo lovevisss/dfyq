@@ -161,6 +161,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\SliderServiceProvider::class,
         App\Providers\NoticeServiceProvider::class,
+        App\Providers\CampusServiceProvider::class,
     ],
 
     /*

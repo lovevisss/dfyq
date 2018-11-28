@@ -14,6 +14,7 @@
 @endsection
 @section('body')
          @include('blocks._notice')
+         @include('blocks._campus')
 @endsection
 
 @section('cubeswiper')

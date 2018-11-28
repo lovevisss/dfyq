@@ -27,12 +27,7 @@ ul, ol, li{
 
 body{
   //background-color: #f0f1f6;
-
-}
-
-body::before{
   background: url('../images/bg.jpg');
-  //opacity: 0.2;
   background-attachment: fixed;
 }
 

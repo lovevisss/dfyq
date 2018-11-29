@@ -61,6 +61,22 @@ a{
   margin-top: 40px;
 }
 
+.bg-blur{
+  position: relative;
+  overflow: hidden;
+  background: hsla(0, 0%, .3);
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    fliter:blur(20px);
+    margin:-30px;
+  }
+}
+
 @import "header";
 @import "nav";
 @import "swiper";

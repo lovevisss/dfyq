@@ -13,7 +13,7 @@
 
 @mixin white_round_block($radius, $transition, $height: $list-height){
   height: $height;
-  background: #fff;
+  background: hsla(0, 0%, 100%, .7);
   border-radius: $radius + px;
   border: 1px #fff solid;
   @include transitions($transition);
@@ -64,7 +64,7 @@ a{
 .bg-blur{
   position: relative;
   overflow: hidden;
-  background: hsla(0, 0%, 100%, .3);
+  background: hsla(0, 0%, 100%, .7);
   &::before{
     content: '';
     position: absolute;
@@ -72,7 +72,7 @@ a{
     right: 0;
     left: 0;
     bottom: 0;
-    fliter:blur(20px);
+    filter:blur(20px);
     margin:-30px;
   }
 }

@@ -64,7 +64,7 @@ a{
 .bg-blur{
   position: relative;
   overflow: hidden;
-  background: hsla(0, 0%, .3);
+  background: hsla(0, 0%, 100%, .3);
   &::before{
     content: '';
     position: absolute;

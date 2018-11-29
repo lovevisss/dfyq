@@ -11,7 +11,7 @@
     {{Html::style('css/normalize.css')}}
     {{Html::style('css/style.css')}}
 </head>
-<body>
+<body style="{{Request::getPathInfo()!='/'?'background:#fff':''}}">
 {{--@include('blocks._back')--}}
 @include('partials._head')
 @include('partials._nav',['parent_menu' => $parent_menu])

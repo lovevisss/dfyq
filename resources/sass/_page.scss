@@ -4,6 +4,18 @@
   padding-left: 0;
   background-color: #fff;
   //margin: 40px auto 0;
+  h5{
+    color:grey;
+  }
+  h2 h5{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  p{
+    magin:0 0 10px;
+  }
 }
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;

@@ -2,7 +2,7 @@
 
 
 @section('outerclass')
-    col-sm-8 bg-blur
+    col-sm-7 bg-blur
 @stop
 
 @section('title_name')

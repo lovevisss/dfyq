@@ -20,22 +20,39 @@ ul, ol, li {
   padding: 0;
 }
 
-.slider ul li a.active {
-  color: #fff;
-  background: #0568A4;
-  border-radius: 8px 0 0 8px;
+
+
+.slider
+{
+    ul {
+      li {
+        height: 48px;
+        margin:0 auto 8px;
+          a {
+              position: relative;
+              display: block;
+              height: 48px;
+              font-size: 16px;
+              line-height: 48px;
+              color: #787d82;
+              padding-left: 64px;
+              text-align: left;
+              &:hover{
+                color: #14191e;
+              }
+              &.active{
+                color: #fff;
+                background: #0568A4;
+                border-radius: 8px 0 0 8px;
+              }
+            }
+          }
+      }
+
+
 }
 
-.slider ul li a {
-  position: relative;
-  display: block;
-  height: 48px;
-  font-size: 16px;
-  line-height: 48px;
-  color: #787d82;
-  padding-left: 64px;
-  text-align: left;
-}
+
 a {
   text-decoration: none;
 }

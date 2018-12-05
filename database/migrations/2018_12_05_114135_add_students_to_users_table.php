@@ -14,7 +14,10 @@ class AddStudentsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            $table->string('student_card');
+            $table->string('student_num');
+            $table->string('student_class');
+            $table->string('phone');
         });
     }
 

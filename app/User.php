@@ -32,4 +32,9 @@ class User extends \TCG\Voyager\Models\User
     {
         return $this->belongsToMany('App\Nightenroll');
     }
+
+    public function UNIclass()
+    {
+        return $this->hasOne('App\Uniclass');
+    }
 }

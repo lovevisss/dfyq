@@ -14,9 +14,9 @@ class AddStudentsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('student_card');
+            $table->string('student_card');   //上传图片
             $table->string('student_num');
-            $table->string('student_class');
+            $table->integer('uniclass_id'); //class id
             $table->string('phone');
         });
     }
@@ -31,7 +31,7 @@ class AddStudentsToUsersTable extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('student_card');
             $table->dropColumn('student_num');
-            $table->dropColumn('student_class');
+            $table->dropColumn('uniclass_id');
             $table->dropColumn('phone');
 
         });

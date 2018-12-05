@@ -12,4 +12,9 @@ class Uniclass extends Model
         return $this->hasManyThrough('App\Nightenroll', 'App\User', 'uniclass_id','user_id');
     }
 
+    public function department()
+    {
+        return $this->hasOne('App\Department');
+    }
+
 }

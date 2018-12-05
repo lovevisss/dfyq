@@ -41,6 +41,12 @@ Route::get('class', function()
 //    return $enrolls->
 });
 
+Route::get('onetone', function()
+{
+    $uniclass = \App\Uniclass::find(1);
+    return $uniclass->department;
+});
+
 Route::get('post', function()
 {
    return 'post page';

@@ -44,7 +44,7 @@ Route::get('class', function()
 Route::get('onetone', function()
 {
     $uniclass = \App\Uniclass::find(1);
-    return $uniclass->department;
+    return $uniclass->department->name;
 });
 
 Route::get('post', function()

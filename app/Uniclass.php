@@ -14,7 +14,7 @@ class Uniclass extends Model
 
     public function department()
     {
-        return $this->hasOne('App\Department');
+        return $this->belongsTo('App\Department');
     }
 
 }

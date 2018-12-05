@@ -29,7 +29,11 @@ class AddStudentsToUsersTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            $table->dropColumn('student_card');
+            $table->dropColumn('student_num');
+            $table->dropColumn('student_class');
+            $table->dropColumn('phone');
+
         });
     }
 }

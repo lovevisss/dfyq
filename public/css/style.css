@@ -4,6 +4,10 @@ ul, ol, li {
   padding: 0;
   /* delete padding */ }
 
+body {
+  background: url("../images/bg.jpg");
+  background-attachment: fixed; }
+
 a {
   text-decoration: none; }
   a:hover {
@@ -26,6 +30,20 @@ a {
 
 .maincontent {
   margin-top: 40px; }
+
+.bg-blur {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.7); }
+  .bg-blur::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    filter: blur(20px);
+    margin: -30px; }
 
 .top-zone {
   background: url(../images/top.jpg) -190px;
@@ -180,9 +198,9 @@ a {
 
 .small_list {
   height: 326px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
-  border: 1px #ffcb99 solid;
+  border: 1px #fff solid;
   transition: 0.8;
   -webkit-transition: 0.8;
   padding: 0 20px;
@@ -190,18 +208,18 @@ a {
 
 .list_witch_pic {
   height: 400px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
-  border: 1px #ffcb99 solid;
+  border: 1px #fff solid;
   transition: 0.8;
   -webkit-transition: 0.8;
   margin-right: 50px; }
 
 .rolling_list {
   height: 400px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
-  border: 1px #ffcb99 solid;
+  border: 1px #fff solid;
   transition: 0.8;
   -webkit-transition: 0.8;
   float: right;
@@ -209,9 +227,9 @@ a {
 
 .contact_list {
   height: 400px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
-  border: 1px #ffcb99 solid;
+  border: 1px #fff solid;
   transition: 0.8;
   -webkit-transition: 0.8;
   float: right;
@@ -221,9 +239,9 @@ a {
 
 .list_from_other_web {
   height: 400px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
-  border: 1px #ffcb99 solid;
+  border: 1px #fff solid;
   transition: 0.8;
   -webkit-transition: 0.8;
   margin-top: 40px; }
@@ -242,6 +260,14 @@ a {
   padding: 0 15px;
   margin: 5px 0;
   overflow: hidden; }
+  .in_noticeList ul li {
+    height: 36px;
+    line-height: 36px;
+    margin-top: -1px;
+    border-top: 1px dashed #f1f1f1;
+    display: block;
+    margin: 0 0 !important;
+    min-height: 0px !important; }
 
 .in_noticeMore {
   padding: 8px 0;
@@ -375,10 +401,17 @@ a {
         -webkit-transition: 0.5s; }
 
 .content {
-  width: 1200px;
   padding-right: 0;
   padding-left: 0;
-  margin: 40px auto 0; }
+  background-color: #fff; }
+  .content h5 {
+    color: grey; }
+  .content .article h2, .content h5 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px; }
+  .content p {
+    magin: 0 0 10px; }
 
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -395,20 +428,35 @@ ul, ol, li {
   margin: 0;
   padding: 0; }
 
-.slider ul li a.active {
-  color: #fff;
-  background: #0568A4;
-  border-radius: 8px 0 0 8px; }
-
-.slider ul li a {
-  position: relative;
-  display: block;
+.slider ul li {
   height: 48px;
-  font-size: 16px;
-  line-height: 48px;
-  color: #787d82;
-  padding-left: 64px;
-  text-align: left; }
+  margin: 0 auto 8px; }
+  .slider ul li a {
+    position: relative;
+    display: block;
+    height: 48px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #787d82;
+    padding-left: 64px;
+    text-align: left; }
+    .slider ul li a:hover {
+      color: #14191e; }
+    .slider ul li a.active {
+      color: #fff;
+      background: #0568A4;
+      border-radius: 8px 0 0 8px; }
+      .slider ul li a.active:after {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 24px solid #f0f1f6;
+        border-bottom: 24px solid #f0f1f6;
+        border-left: 15px solid transparent; }
 
 a {
   text-decoration: none; }
@@ -420,6 +468,8 @@ a {
   text-indent: 20px;
   padding: 0 0;
   color: white; }
+  .content .breadcrumb a {
+    color: #fff; }
 
 .breadcrumb {
   padding: 8px 15px;

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Department;
+use App\Major;
 class MajorsTableSeeder extends Seeder
 {
     /**
@@ -16,7 +16,7 @@ class MajorsTableSeeder extends Seeder
         foreach ($majors as $index=> $major)
         {
 
-            Department::create([
+            Major::create([
                 'department_id' => '1',
                 'name' => $major,
 

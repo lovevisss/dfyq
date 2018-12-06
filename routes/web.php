@@ -50,7 +50,8 @@ Route::get('onetone', function()
 Route::get('onetomany', function()
 {
     $department = \App\Department::find(1);
-    return $department->majors;
+    foreach ($department->majors as $major)
+        echo $major->name;
 });
 
 Route::get('post', function()

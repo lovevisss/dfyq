@@ -15,6 +15,8 @@ class CreateMajorsTable extends Migration
     {
         Schema::create('majors', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('department_id');  //分院
+            $table->string('name');
             $table->timestamps();
         });
     }

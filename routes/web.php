@@ -47,6 +47,12 @@ Route::get('onetone', function()
     return $uniclass->department->name;
 });
 
+Route::get('onetomany', function()
+{
+    $department = \App\Department::find(1);
+    return $department->majors;
+});
+
 Route::get('post', function()
 {
    return 'post page';

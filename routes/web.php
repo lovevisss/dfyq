@@ -54,6 +54,12 @@ Route::get('onetomany', function()
         echo $major->name;
 });
 
+Route::get('manytomany', function(){
+    $user = \App\User::find(1);
+    foreach($user->products as $product)
+        echo $product->name;
+});
+
 Route::get('post', function()
 {
    return 'post page';

@@ -37,4 +37,9 @@ class User extends \TCG\Voyager\Models\User
     {
         return $this->hasOne('App\Uniclass');
     }
+
+    public function products()
+    {
+        return $this->belongsToMany('App\Product');
+    }
 }

@@ -15,6 +15,9 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
+            $table->integer('range_id'); //经营范围
+            $table->boolean('is_airless');  //是否真空
             $table->timestamps();
         });
     }

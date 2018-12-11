@@ -46,6 +46,6 @@ class User extends \TCG\Voyager\Models\User
 
     public function comments()
     {
-        $this->morphMany('App\Comment', 'commentable');
+        return $this->morphMany('App\Comment', 'commentable');
     }
 }

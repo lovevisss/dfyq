@@ -10,11 +10,11 @@ class Product extends Model
 
     public function users()
     {
-        $this->belongsToMany('App/User');
+        return $this->belongsToMany('App/User');
     }
 
     public function comments()
     {
-        $this->morphMany('App\Comment', 'commentable');
+        return $this->morphMany('App\Comment', 'commentable');
     }
 }

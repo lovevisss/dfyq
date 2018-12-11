@@ -67,6 +67,17 @@ Route::get('attach', function (){
    return 'attached';
 });
 
+Route::get('mophtest1', function(){
+    $product = \App\Product::find(1);
+    echo $product->comments;
+});
+
+Route::get('mophtest2', function(){
+    $user = \App\User::find(2);
+    foreach ($user->comments as $comment)
+        echo $comment->body;
+});
+
 Route::get('post', function()
 {
    return 'post page';

@@ -42,4 +42,10 @@ class User extends \TCG\Voyager\Models\User
     {
         return $this->belongsToMany('App\Product');
     }
+
+
+    public function comments()
+    {
+        $this->morphMany('App\Comment', 'commentable');
+    }
 }

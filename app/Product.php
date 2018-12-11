@@ -12,4 +12,9 @@ class Product extends Model
     {
         $this->belongsToMany('App/User');
     }
+
+    public function comments()
+    {
+        $this->morphMany('App\Comment', 'commentable');
+    }
 }

@@ -60,6 +60,13 @@ Route::get('manytomany', function(){
         echo $product->name;
 });
 
+
+Route::get('attach', function (){
+   $user = \App\User::find(1);
+   $user->products()->attach(5);
+   return 'attached';
+});
+
 Route::get('post', function()
 {
    return 'post page';

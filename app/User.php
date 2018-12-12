@@ -48,4 +48,9 @@ class User extends \TCG\Voyager\Models\User
     {
         return $this->morphMany('App\Comment', 'commentable');
     }
+
+    public function tags()
+    {
+        return $this->morphToMany('App\Tag', 'taggable');
+    }
 }

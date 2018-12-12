@@ -78,6 +78,12 @@ Route::get('mophtest2', function(){
         echo $comment->body;
 });
 
+Route::get('morphmany', function(){
+   $user = \App\User::find(1);
+   foreach ($user->tags as $tag)
+       echo $tag->name;
+});
+
 Route::get('post', function()
 {
    return 'post page';

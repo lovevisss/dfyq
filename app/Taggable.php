@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class taggable extends Model
+class Taggable extends Model
 {
     //
 }

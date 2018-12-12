@@ -84,6 +84,13 @@ Route::get('morphmany', function(){
        echo $tag->name;
 });
 
+Route::get('morphmany2', function()
+{
+    $tag = \App\Tag::find(1);
+    foreach ($tag->users as $user)
+        echo $user->name;
+});
+
 Route::get('post', function()
 {
    return 'post page';

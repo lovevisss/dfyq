@@ -19,6 +19,6 @@ class StudentController extends Controller
 
     public function register()
     {
-        return "register";
+        return view('students.register');
     }
 }

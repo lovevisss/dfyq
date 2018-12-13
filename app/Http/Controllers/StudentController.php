@@ -34,4 +34,9 @@ class StudentController extends Controller
         $parent_menu = MenuItem::where('id', '=', 15)->first();
         return view('students.message', compact('parent_menu'));
     }
+
+    public  function post_message()
+    {
+        return "posted";
+    }
 }

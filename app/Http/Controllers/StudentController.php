@@ -11,7 +11,8 @@ class StudentController extends Controller
 {
     public function index()
     {
-        return view('students.index');
+        $parent_menu = MenuItem::where('id', '=', 15)->first();
+        return view('students.index',compact('parent_menu'));
     }
 
     public function login()

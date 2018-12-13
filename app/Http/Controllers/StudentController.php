@@ -21,4 +21,9 @@ class StudentController extends Controller
     {
         return view('students.register');
     }
+
+    public function term()
+    {
+        return "term";
+    }
 }

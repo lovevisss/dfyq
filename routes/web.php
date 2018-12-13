@@ -96,7 +96,7 @@ Route::get('student/login', ['as' => 'student_login', 'uses' => 'StudentControll
 Route::post('student/login', ['as' => 'post_student_login', 'uses' => 'StudentController@post_login']);
 Route::get('student/register', ['as' => 'student_register', 'uses' => 'StudentController@register']);
 Route::post('student/register', ['as' => 'post_student_register', 'uses' => 'StudentController@post_register']);
-
+Route::get('terms', ['as' => 'terms', 'uses' => 'StudentController@term']);
 
 Route::get('post', function()
 {

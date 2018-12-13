@@ -91,6 +91,9 @@ Route::get('morphmany2', function()
         echo $user->name;
 });
 
+
+Route::get('student/login', ['as' => 'student_login', 'uses' => 'StudentController@login']);
+
 Route::get('post', function()
 {
    return 'post page';

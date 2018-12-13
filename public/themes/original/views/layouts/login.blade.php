@@ -11,7 +11,7 @@
     {{Html::style('css/datepicker.css')}}
 </head>
 <body>
-@yield('body')
+@yield('body')p
 @include('partials._foot')
 </body>
 {{Html::script('js/jquery-1.11.1.min.js')}}

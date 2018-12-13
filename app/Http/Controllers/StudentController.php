@@ -26,4 +26,9 @@ class StudentController extends Controller
     {
         return "term";
     }
+
+    public  function  message()
+    {
+        return view('students.message');
+    }
 }

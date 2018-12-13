@@ -5,9 +5,15 @@ namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Redirect;
 use TCG\Voyager\Models\MenuItem;
 class StudentController extends Controller
 {
+    public function index()
+    {
+        return view('students.index');
+    }
+
     public function login()
     {
         return view('students.login');
@@ -30,7 +36,7 @@ class StudentController extends Controller
         $input = $request->all();
         $input['role_id'] = 3;
         User::create($input);
-        return "created";
+        return Redirect::route('student.index');
     }
 
     public function term()

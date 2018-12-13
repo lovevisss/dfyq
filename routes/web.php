@@ -99,6 +99,7 @@ Route::post('student/register', ['as' => 'post_student_register', 'uses' => 'Stu
 Route::get('terms', ['as' => 'terms', 'uses' => 'StudentController@term']);
 Route::get('message', ['as' => 'message', 'uses' => 'StudentController@message']);
 Route::post('message', ['as' => 'post_student_message', 'uses' => 'StudentController@post_message']);
+Route::post('student/index', ['as' => 'student.index', 'uses' => 'StudentController@index']);
 Route::get('post', function()
 {
    return 'post page';

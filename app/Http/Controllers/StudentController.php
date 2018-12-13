@@ -23,9 +23,9 @@ class StudentController extends Controller
         return view('students.register');
     }
 
-    public function post_register()
+    public function post_register(Request $request)
     {
-        return 'post register';
+        return $request->get('name');
     }
 
     public function term()

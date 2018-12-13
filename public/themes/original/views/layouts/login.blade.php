@@ -10,8 +10,8 @@
     {{Html::style('css/login.css')}}
     {{Html::style('css/datepicker.css')}}
 </head>
-<body>
-@yield('body')p
+<body style="{{Request::getPathInfo()!='/'?'background:#f0f1f6':''}}">
+@yield('body')
 @include('partials._footer')
 </body>
 {{Html::script('js/jquery-1.11.1.min.js')}}

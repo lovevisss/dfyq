@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 use TCG\Voyager\Models\MenuItem;
@@ -25,7 +26,11 @@ class StudentController extends Controller
 
     public function post_register(Request $request)
     {
-        return $request->get('name');
+
+        $input = $request->all();
+        $input['role_id'] = 3;
+        User::create($input);
+        return "created";
     }
 
     public function term()

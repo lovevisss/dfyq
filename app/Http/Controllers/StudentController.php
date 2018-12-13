@@ -23,6 +23,11 @@ class StudentController extends Controller
         return view('students.register');
     }
 
+    public function post_register()
+    {
+        return 'post register';
+    }
+
     public function term()
     {
         return "term";

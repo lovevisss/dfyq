@@ -4,9 +4,9 @@
     @include('partials._login_header')
 
     <div class="content_box clearfix">
-        <h2>招人
+        <h2>注册
             <i class="slash">|</i>
-            <span>抢先预约招聘会</span>
+            <span>抢先预约夜市</span>
             {{-- <a href="{{route('student_entry')}}">学生登录<i class="glyphicon glyphicon-chevron-right"> </i></a> --}}
         </h2>
         <div class="left_area fl">

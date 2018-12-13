@@ -28,6 +28,11 @@ class User extends \TCG\Voyager\Models\User
         'password', 'remember_token',
     ];
 
+    public function setPasswordAttribute($password)
+    {
+        $this->attributes['password'] = \Hash::make($password);
+    }
+
     public function nightenrolls()
     {
         return $this->belongsToMany('App\Nightenroll');

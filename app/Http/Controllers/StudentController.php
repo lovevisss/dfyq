@@ -10,4 +10,15 @@ class StudentController extends Controller
     {
         return view('students.login');
     }
+
+
+    public function post_login()
+    {
+        return "posted";
+    }
+
+    public function register()
+    {
+        return "register";
+    }
 }

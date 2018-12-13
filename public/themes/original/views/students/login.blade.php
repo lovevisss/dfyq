@@ -10,7 +10,7 @@
             {{-- <a href="{{route('student_entry')}}">学生登录<i class="glyphicon glyphicon-chevron-right"> </i></a> --}}
         </h2>
         <div class="left_area fl">
-            {{Form::open(['url' => route('post_company_login')])}}
+            {{Form::open(['url' => route('post_student_login')])}}
 
             <div class="form_body">
                 {{Form::text('name', null, ['placeholder' => '用户名', 'class' => 'form-control'])}}
@@ -29,7 +29,7 @@
         <div class="divider fl"></div>
         <div class="right_area fl">
             <h5>没有账号:</h5>
-            <a href="{{route('company_register')}}" class="login_now">注册账号 <i class="glyphicon glyphicon-log-in"></i></a>
+            <a href="{{route('student_register')}}" class="login_now">注册账号 <i class="glyphicon glyphicon-log-in"></i></a>
 
         </div>
     </div>

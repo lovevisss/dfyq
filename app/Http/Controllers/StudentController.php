@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use TCG\Voyager\Models\MenuItem;
 class StudentController extends Controller
 {
     public function login()
@@ -29,6 +30,8 @@ class StudentController extends Controller
 
     public  function  message()
     {
-        return view('students.message');
+
+        $parent_menu = MenuItem::where('id', '=', 15)->first();
+        return view('students.message', compact('parent_menu'));
     }
 }

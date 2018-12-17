@@ -1,0 +1,202 @@
+.sso_header {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  background-color: #52b3fa; }
+
+.index_header {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #52b3fa; }
+  .index_header .logo {
+    top: 20px;
+    margin-left: 20px; }
+
+.logo {
+  position: absolute;
+  z-index: 9999;
+  top: 76px;
+  left: 50%;
+  margin-left: -350px;
+  width: 400px;
+  height: 65px;
+  background: url("/images/logo_main.png") no-repeat;
+  background-size: contain; }
+
+.header_w {
+  background: #52b3fa; }
+
+.header {
+  background: #52b3fa; }
+
+.content_box {
+  position: relative;
+  z-index: 1;
+  width: 674px;
+  margin: -205px auto 60px;
+  padding: 60px 76px;
+  background-color: #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #dce1e6;
+  display: table; }
+  .content_box h2 {
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 20px; }
+    .content_box h2 .slash {
+      color: #d8d8d8;
+      position: relative;
+      top: -1px; }
+    .content_box h2 span {
+      color: #555;
+      font-size: 16px; }
+    .content_box h2 a {
+      position: absolute;
+      right: 0;
+      font-size: 16px;
+      text-decoration: none;
+      color: #52b3fa;
+      padding-right: 14px; }
+  .content_box .form_body {
+    float: left;
+    display: block; }
+  .content_box .divider {
+    position: relative;
+    border-left: 1px dashed #ededed;
+    height: 310px;
+    color: #d8d8d8;
+    margin: 0 48px; }
+    .content_box .divider:after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      padding: 2px;
+      background-color: #fff;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .content_box .right_area {
+    width: 151px;
+    color: #777; }
+    .content_box .right_area h5 {
+      margin: 74px 0 8px;
+      color: #555; }
+    .content_box .right_area .login_now {
+      display: inline-block;
+      height: 22px;
+      line-height: 22px;
+      font-size: 16px;
+      color: #52b3fa;
+      padding-right: 23px; }
+  .content_box .left_area {
+    width: 230px;
+    padding-top: 10px; }
+
+::selection {
+  background: #52b3fa;
+  color: white; }
+
+.fl {
+  float: left; }
+
+.form-control {
+  margin-bottom: 15px; }
+
+.btn-green {
+  color: #fff;
+  background-color: #52b3fa;
+  border-color: #52b3fa; }
+  .btn-green:hover {
+    color: #fff;
+    background-color: #52b3fa;
+    border-color: #52b3fa; }
+
+.btn:hover {
+  color: #fff; }
+
+.agree_text {
+  margin-top: 12px;
+  text-align: center;
+  color: #999; }
+
+.slider ul li a.active {
+  background-color: #52b3fa; }
+
+.company_mainarea {
+  margin: 70px; }
+  .company_mainarea h1 {
+    color: #52b3fa;
+    text-align: center; }
+  .company_mainarea .right_area {
+    padding-top: 66px;
+    padding-left: 80px;
+    min-height: 500px; }
+
+.article_main {
+  padding-bottom: 30px; }
+  .article_main .toptab {
+    border-bottom: 1px solid #d4d5d7;
+    margin-top: 10px;
+    height: 58px; }
+    .article_main .toptab a {
+      display: inline-block; }
+    .article_main .toptab li {
+      float: left;
+      margin-right: 58px;
+      margin-top: -1px;
+      text-align: center;
+      padding: 0 2px;
+      height: 58px;
+      line-height: 59px; }
+    .article_main .toptab .tabactive {
+      color: #52b3fa;
+      border-bottom: 2px solid #52b3fa; }
+      .article_main .toptab .tabactive a {
+        color: #52b3fa; }
+    .article_main .toptab .left_wrap {
+      float: right;
+      text-align: right;
+      padding-top: 9px; }
+    .article_main .toptab .wanna-build {
+      font-size: 14px;
+      background-color: #52b3fa;
+      width: 84px;
+      height: 40px;
+      line-height: 40px;
+      color: #fff;
+      text-align: center;
+      margin-left: 20px; }
+
+.input-group {
+  margin-bottom: 10px; }
+
+.line {
+  height: 1px;
+  background-color: #d0d6d9;
+  margin-top: 12px; }
+
+textarea {
+  min-height: 450px; }
+
+.form-control[disabled] {
+  background-color: white;
+  opacity: 1;
+  cursor: default; }
+
+.blueC {
+  color: #337ab7; }
+
+.greenC {
+  color: #5cb85c; }
+
+.yellowC {
+  color: #f0ad4e; }
+
+.redC {
+  color: #d9534f; }
+
+/*# sourceMappingURL=login.css.map */

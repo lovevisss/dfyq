@@ -10,7 +10,7 @@
             {{-- <a href="{{route('student_entry')}}">学生登录<i class="glyphicon glyphicon-chevron-right"> </i></a> --}}
         </h2>
         <div class="left_area fl">
-            {{Form::open(['url' => route('post_student_register')])}}
+            {!!Form::open(['url' => route('post_student_register')])!!}
             <div class="form_body">
                 {{Form::text('name', null, ['placeholder' => '用户名', 'class' => 'form-control'])}}
                 {!!$errors->first('name', '<span class="help-block">:message</span>')!!}
@@ -30,7 +30,7 @@
                     注册代表你已同意<a href="{{route('terms')}}">「用户协议」</a>
                 </div>
             </div>
-            {{Form::close()}}
+            {!!Form::close()!!}
         </div>
         <div class="divider fl"></div>
         <div class="right_area fl">

@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Redirect;
 use TCG\Voyager\Models\MenuItem;
+use App\Http\Requests\UserRegisterRequest;
 class StudentController extends Controller
 {
     public function index()
@@ -31,7 +32,7 @@ class StudentController extends Controller
         return view('students.register');
     }
 
-    public function post_register(Request $request)
+    public function post_register(UserRegisterRequest $request)
     {
 
         $input = $request->all();

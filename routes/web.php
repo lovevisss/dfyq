@@ -101,6 +101,8 @@ Route::get('terms', ['as' => 'terms', 'uses' => 'StudentController@term']);
 Route::get('message', ['as' => 'message', 'uses' => 'StudentController@message']);
 Route::post('message', ['as' => 'post_student_message', 'uses' => 'StudentController@post_message']);
 Route::get('student/index', ['as' => 'student.index', 'uses' => 'StudentController@index']);
+Route::get('student/info', ['as' => 'student.info', 'uses' => 'StudentController@info']);
+Route::post('student/info', ['as' => 'student.update', 'uses' => 'StudentController@update']);
 Route::get('post', function()
 {
    return 'post page';

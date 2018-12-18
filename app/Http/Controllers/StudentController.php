@@ -70,4 +70,16 @@ class StudentController extends Controller
     {
         return "posted";
     }
+
+    public function info()
+    {
+        $parent_menu = MenuItem::where('id', '=', 15)->first();
+        $student = Auth::user();
+        return view('students.info', compact('parent_menu', 'student'));
+    }
+
+    public  function update()
+    {
+        return 'updated';
+    }
 }

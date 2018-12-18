@@ -3,7 +3,7 @@
         <div class="">
             <a href="{{route('index')}}" title="{{env('APP_NAME')}}"></a>
             <div class="header_contact">
-                @if(Auth::user()!=null && Auth::user()->role()->id == 3)
+                @if(Auth::user()!=null && Auth::user()->role->id == 3)
 
                     <a href="{{route('student.index')}}" title="我的信息" class="current">我的信息</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{route('student.logout')}}" title="退出登录">退出登录</a>
                     @else

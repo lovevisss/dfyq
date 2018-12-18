@@ -10,4 +10,7 @@ class Comment extends Model
     {
         $this->morphTo();
     }
+
+
+
 }

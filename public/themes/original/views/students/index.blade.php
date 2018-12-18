@@ -5,7 +5,7 @@
 
 
     index
-    {{\Illuminate\Support\Facades\Auth::user()}}
+    {{Auth::user()}}
 
 
 @endsection

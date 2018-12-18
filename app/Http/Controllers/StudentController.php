@@ -22,6 +22,12 @@ class StudentController extends Controller
         return view('students.login');
     }
 
+    public function logout()
+    {
+        Auth::logout();
+        return Redirect::route('index');
+    }
+
 
     public function post_login()
     {

@@ -94,6 +94,7 @@ Route::get('morphmany2', function()
 
 Route::get('student/login', ['as' => 'student_login', 'uses' => 'StudentController@login']);
 Route::post('student/login', ['as' => 'post_student_login', 'uses' => 'StudentController@post_login']);
+Route::get('student/logout', ['as' => 'student.logout', 'uses' => 'StudentController@logout']);
 Route::get('student/register', ['as' => 'student_register', 'uses' => 'StudentController@register']);
 Route::post('student/register', ['as' => 'post_student_register', 'uses' => 'StudentController@post_register']);
 Route::get('terms', ['as' => 'terms', 'uses' => 'StudentController@term']);

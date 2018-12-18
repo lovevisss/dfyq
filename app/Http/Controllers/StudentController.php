@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use TCG\Voyager\Models\MenuItem;
 use App\Http\Requests\UserRegisterRequest;
@@ -24,7 +25,12 @@ class StudentController extends Controller
 
     public function post_login()
     {
-        return "posted";
+        $credit = Input::only('name', 'password');
+        if(Auth::attempt($credit))
+            return Redirect::route('student.index');
+        else{
+            return Redirect::route('student_login')->with('message', '用户名或密码错误');
+        }
     }
 
     public function register()

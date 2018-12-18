@@ -31,7 +31,7 @@ class StudentController extends Controller
 
     public function post_login(Request $request)
     {
-        $credit = $request::only('mail', 'password');
+        $credit = $request->only('mail', 'password');
         if(Auth::attempt($credit))
             return Redirect::route('student.index');
         else{

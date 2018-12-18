@@ -13,8 +13,8 @@
             {{Form::open(['url' => route('post_student_login')])}}
 
             <div class="form_body">
-                {{Form::text('name', null, ['placeholder' => '用户名', 'class' => 'form-control'])}}
-                {!!$errors->first('name', '<span class="help-block">:message</span>')!!}
+                {{Form::text('email', null, ['placeholder' => 'Email', 'class' => 'form-control'])}}
+                {!!$errors->first('email', '<span class="help-block">:message</span>')!!}
                 {{Form::password('password', ['placeholder' => '密码', 'class' => 'form-control'])}}
                 {!!$errors->first('password', '<span class="help-block">:message</span>')!!}
                 @if(Session::has('message'))

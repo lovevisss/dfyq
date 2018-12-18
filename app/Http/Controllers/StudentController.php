@@ -29,13 +29,13 @@ class StudentController extends Controller
     }
 
 
-    public function post_login()
+    public function post_login($request)
     {
-        $credit = \Input::only('name', 'password');
+        $credit = $request::only('mail', 'password');
         if(Auth::attempt($credit))
             return Redirect::route('student.index');
         else{
-            return Redirect::route('student_login')->with('message', '用户名或密码错误');
+            return Redirect::route('student_login')->with('message', '邮箱或密码错误');
         }
     }
 

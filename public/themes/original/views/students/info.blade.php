@@ -21,13 +21,13 @@
         </div>
          <div class="form-group">
              {!! Form::label('phone','手机:') !!}
-             {!! Form::('phone', null, ['class' => 'form-control']) !!}
+             {!! Form::text('phone', null, ['class' => 'form-control']) !!}
          </div>
           <div class="form-group">
               {!! Form::label('student_card','学生证:') !!}
               {!! Form::file('student_card', null, ['class' => 'form-control']) !!}
           </div>
-          {!! Form::submit(更新,['class' => 'btn btn-primary']) !!}
+          {!! Form::submit('更新',['class' => 'btn btn-primary']) !!}
     {!! Form::close()!!}
 
 @endsection

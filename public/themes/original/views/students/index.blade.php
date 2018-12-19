@@ -7,7 +7,7 @@
     index
     {{Auth::user()}}
     <div class="image-container">
-        <img src="{{env('APP_URL').$student->student_card}}" alt="" style="width:300px; height:300px;">
+        <img src="{{$student->student_card}}" alt="" style="width:300px; height:300px;">
     </div>
     <ul>
         <li><a href="{{route('student.info')}}">我的资料</a></li>

@@ -33,6 +33,11 @@ class User extends \TCG\Voyager\Models\User
         $this->attributes['password'] = \Hash::make($password);
     }
 
+    public function getStudentCardAttribute($value)
+    {
+        return env('APP_URL').$value;
+    }
+
     public function nightenrolls()
     {
         return $this->belongsToMany('App\Nightenroll');

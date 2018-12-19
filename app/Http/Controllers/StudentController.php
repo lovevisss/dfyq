@@ -78,8 +78,9 @@ class StudentController extends Controller
         return view('students.info', compact('parent_menu', 'student'));
     }
 
-    public  function update()
+    public  function update(Request $request)
     {
+        return $request->file('student_card');
         return 'updated';
     }
 }

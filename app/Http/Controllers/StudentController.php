@@ -86,7 +86,7 @@ class StudentController extends Controller
         {
             $name = date('Y-m-d-H-i-s').'-'.$file->getClientOriginalName();
             $file->move('images/student_card', $name);
-            $input['student_card'] = 'images/student_card/'.$name;
+            $input['student_card'] = '/images/student_card/'.$name;
         }
         $user = User::find(Auth::id());
         $user->update($input);

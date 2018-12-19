@@ -87,7 +87,8 @@ class StudentController extends Controller
             $file->move('images/student_card', $name);
             $input['student_card'] = 'images/student_card'.$name;
         }
-        User::update($input);
+        $user = User::find(Auth::id());
+        $user->update($request->all());
         return Redirect::route('student.index');
     }
 }

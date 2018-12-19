@@ -80,7 +80,8 @@ class StudentController extends Controller
 
     public  function update(Request $request)
     {
-        return $request->file('student_card');
+        $file = $request->file('student_card');
+        return $file->getClientOriginalName();
         return 'updated';
     }
 }

@@ -14,7 +14,8 @@ class StudentController extends Controller
     public function index()
     {
         $parent_menu = MenuItem::where('id', '=', 15)->first();
-        return view('students.index',compact('parent_menu'));
+        $student = Auth::user();
+        return view('students.index',compact('parent_menu', 'student'));
     }
 
     public function login()
@@ -83,12 +84,12 @@ class StudentController extends Controller
         $input = $request->all();
         if($file = $request->file('student_card'))
         {
-            $name = $file->getClientOriginalName();
+            $name = date('Y-m-d-H-i-s').'-'.$file->getClientOriginalName();
             $file->move('images/student_card', $name);
             $input['student_card'] = 'images/student_card'.$name;
         }
         $user = User::find(Auth::id());
-        $user->update($request->all());
+        $user->update($input);
         return Redirect::route('student.index');
     }
 }

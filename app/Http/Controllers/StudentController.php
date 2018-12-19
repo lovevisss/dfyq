@@ -80,8 +80,14 @@ class StudentController extends Controller
 
     public  function update(Request $request)
     {
-        $file = $request->file('student_card');
-        return $file->getClientOriginalName();
-        return 'updated';
+        $input = $request->all();
+        if($file = $request->file('student_card'))
+        {
+            $name = $file->getClientOriginalName();
+            $file->move('images/student_card', $name);
+            $input['student_card'] = 'images/student_card'.$name;
+        }
+        User::update($input);
+        return Redirect::route('student.index');
     }
 }

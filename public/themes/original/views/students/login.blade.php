@@ -12,7 +12,7 @@
         <div class="left_area fl">
             {{Form::open(['url' => route('post_student_login')])}}
 
-            <div class="form_body {{$errors ? ' has-error': ''}}">
+            <div class="form_body {{$errors!=NULL ? ' has-error': ''}}">
                 {{Form::text('email', null, ['placeholder' => 'Email', 'class' => 'form-control'])}}
                 {!!$errors->first('email', '<span class="help-block">:message</span>')!!}
                 {{Form::password('password', ['placeholder' => '密码', 'class' => 'form-control'])}}

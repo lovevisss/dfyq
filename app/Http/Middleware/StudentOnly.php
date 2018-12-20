@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Support\Facades\Redirect;
 
+use Illuminate\Support\Facades\Auth;
 class StudentOnly
 {
     /**
@@ -18,7 +19,6 @@ class StudentOnly
     {
         if(Auth::user() && Auth::user()->role->id == 3)
         {
-            return "this works";
             return $next($request);
         }
         else{

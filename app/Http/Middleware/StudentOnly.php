@@ -18,6 +18,7 @@ class StudentOnly
     {
         if(Auth::user() && Auth::user()->role->id == 3)
         {
+            return "this works";
             return $next($request);
         }
         else{

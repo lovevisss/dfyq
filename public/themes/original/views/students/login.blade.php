@@ -13,9 +13,9 @@
             {{Form::open(['url' => route('post_student_login')])}}
 
             <div class="form_body">
-                {{Form::text('email', null, ['placeholder' => 'Email', 'class' => 'form-control'.$errors->has('email')?' has_error':''])}}
+                {{Form::text('email', null, ['placeholder' => 'Email', 'class' => 'form-control'.($errors->has('email') ? ' has_error' :'')])}}
                 {!!$errors->first('email', '<span class="help-block">:message</span>')!!}
-                {{Form::password('password', ['placeholder' => '密码', 'class' => 'form-control'.$errors->has('password')?' has_error':''])}}
+                {{Form::password('password', ['placeholder' => '密码', 'class' => 'form-control'.($errors->has('password') ? ' has_error' :'')])}}
                 {!!$errors->first('password', '<span class="help-block">:message</span>')!!}
                 @if(Session::has('message'))
                     <p class="red_alert">{{Session::get('message')}}</p>

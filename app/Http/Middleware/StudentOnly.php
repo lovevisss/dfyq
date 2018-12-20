@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Redirect;
 
 class StudentOnly
 {
@@ -15,6 +16,12 @@ class StudentOnly
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        if(Auth::user() && Auth::user()->role->id == 3)
+        {
+            return $next($request);
+        }
+        else{
+            return Redirect::route('index');
+        }
     }
 }

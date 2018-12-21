@@ -11,6 +11,11 @@ use TCG\Voyager\Models\MenuItem;
 use App\Http\Requests\UserRegisterRequest;
 class StudentController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('student.only')->except('login');
+    }
+
     public function index()
     {
         $parent_menu = MenuItem::where('id', '=', 15)->first();

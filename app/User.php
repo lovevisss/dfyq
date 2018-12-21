@@ -38,6 +38,14 @@ class User extends \TCG\Voyager\Models\User
         return env('APP_URL').$value;
     }
 
+    public function isStudent(){
+        if($this->role->name == 'student')
+        {
+            return true;
+        }
+        return false;
+    }
+
     public function nightenrolls()
     {
         return $this->belongsToMany('App\Nightenroll');

@@ -17,7 +17,7 @@ class StudentOnly
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::user() && Auth::user()->role->id == 3)
+        if(Auth::user() && Auth::user()->isStudent())
         {
             return $next($request);
         }

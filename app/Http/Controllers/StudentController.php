@@ -13,7 +13,7 @@ class StudentController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('student.only')->except('login');
+        $this->middleware('student.only')->except('login','register','post_login','post_register');
     }
 
     public function index()

@@ -16,8 +16,10 @@ class StudentController extends Controller
         $this->middleware('student.only')->except('login','register','post_login','post_register');
     }
 
-    public function index()
+    public function index(Request $request)
     {
+        $request->session(['zsy' => 'author']);
+        return $request->session()->get('zsy');
         $parent_menu = MenuItem::where('id', '=', 15)->first();
         $student = Auth::user();
         return view('students.index',compact('parent_menu', 'student'));

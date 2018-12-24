@@ -20,7 +20,8 @@ class StudentController extends Controller
     {
 //        $request->session()->put(['zsy' => 'author']);
         session(['yy' => 'data']);
-        return $request->session()->get('yy');
+        session()->forget('yy');
+        return $request->session();
         $parent_menu = MenuItem::where('id', '=', 15)->first();
         $student = Auth::user();
         return view('students.index',compact('parent_menu', 'student'));

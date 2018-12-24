@@ -18,7 +18,7 @@ class StudentController extends Controller
 
     public function index(Request $request)
     {
-        $request->session(['zsy' => 'author']);
+        $request->session()->put(['zsy' => 'author']);
         return $request->session()->get('zsy');
         $parent_menu = MenuItem::where('id', '=', 15)->first();
         $student = Auth::user();

@@ -22,8 +22,8 @@ class StudentController extends Controller
 //        session(['yy' => 'data']);
 //        session()->forget('yy');
 //        return $request->session()->all();
-        session()->flash('message', 'Post has been created');
-        return session()->get('message');
+//        session()->flash('message', 'Post has been created');
+//        return session()->get('message');
         $parent_menu = MenuItem::where('id', '=', 15)->first();
         $student = Auth::user();
         return view('students.index',compact('parent_menu', 'student'));

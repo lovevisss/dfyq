@@ -27,8 +27,8 @@ class StudentController extends Controller
 //        return session()->get('message');
         $parent_menu = MenuItem::where('id', '=', 15)->first();
         $student = Auth::user();
-        $uniclass = Uniclass::lists('year','id')->all();
-        return view('students.index',compact('parent_menu', 'student', 'uniclass'));
+//        $uniclass = Uniclass::lists('year','id')->all();
+        return view('students.index',compact('parent_menu', 'student'));
     }
 
     public function login()

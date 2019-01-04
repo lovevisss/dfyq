@@ -27,10 +27,7 @@
               {!! Form::label('student_card','学生证:') !!}
               {!! Form::file('student_card', null, ['class' => 'form-control']) !!}
           </div>
-        <div class="form-group">
-            {!! Form::label('uniclass_id','班级:') !!}
-            {!! Form::select('uniclass_id', $uniclass, null, ['class' => 'form-control']) !!}
-        </div>
+
           {!! Form::submit('更新',['class' => 'btn btn-primary']) !!}
     {!! Form::close()!!}
 

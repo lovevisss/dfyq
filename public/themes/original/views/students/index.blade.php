@@ -9,7 +9,7 @@
         @include('partials._studentsidebar')
     </div>
     <div class="col-sm-7">
-        @include('students.partials.info')
+        @yield('content')
         {{--<div class="image-container">--}}
             {{--<img src="{{$student->student_card}}" alt="" style="width:300px; height:300px;">--}}
         {{--</div>--}}

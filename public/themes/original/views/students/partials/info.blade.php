@@ -1,3 +1,7 @@
+@extends('students.index')
+
+
+@section('content')
 {!! Form::model($student, ['url' => route('student.update'), 'files' => true])!!}
 
 <div class="form-group">
@@ -24,3 +28,4 @@
 
 {!! Form::submit('更新',['class' => 'btn btn-primary']) !!}
 {!! Form::close()!!}
+    @endsection

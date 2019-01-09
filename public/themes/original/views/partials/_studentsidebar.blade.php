@@ -1,8 +1,8 @@
 <ul id="accordion" class="accordion">
     <li>
         <div class="link"><i class="fa fa-paint-brush"></i>个人信息<i class="fa fa-chevron-down"></i></div>
-        <ul class="submenu">
-            <li><a href="#">基本信息</a></li>
+        <ul class="submenu" style="display: block">
+            <li><a href="#" class="active">基本信息</a></li>
             <li><a href="#">密码更新</a></li>
             <li><a href="#">资格认证</a></li>
             {{--<li><a href="#">Maquetacion web</a></li>--}}

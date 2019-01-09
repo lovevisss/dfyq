@@ -105,4 +105,17 @@ class StudentController extends Controller
         $user->update($input);
         return Redirect::route('student.index');
     }
+
+    public function password()
+    {
+        $parent_menu = MenuItem::where('id', '=', 15)->first();
+        $student = Auth::user();
+        return view('students.partials.password', compact('parent_menu', 'student'));
+    }
+
+    public function updatePwd(Request $request)
+    {
+        $input = $request->all();
+        dd($request);
+    }
 }

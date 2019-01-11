@@ -1,7 +1,7 @@
 <ul id="accordion" class="accordion">
 
     @foreach($items as $key => $menu_item)
-        {{dd($menu_item)}}
+        {{--{{dd($menu_item)}}--}}
         {{--<li class="@if($menu_item->title == $options->active_menu->title)  //option 是从menu中传入的参数--}}
                         {{--current--}}
             {{--@endif"><a class="navName" href={{$menu_item->link()}} >{{ $menu_item->title }}</a>--}}
@@ -16,7 +16,7 @@
         {{--</li>--}}
 
         <li>
-            <div class="link"><i class="fa fa-paint-brush"></i>{{$menu_item->title}}<i class="fa fa-chevron-down"></i></div>
+            <div class="link"><i class="{{$menu_item->icon_class}}"></i>{{$menu_item->title}}<i class="fa fa-chevron-down"></i></div>
 
                 {{--<li><a href="#" class="active">基本信息</a></li>--}}
                 {{--<li><a href="#">密码更新</a></li>--}}

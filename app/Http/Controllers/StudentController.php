@@ -89,7 +89,9 @@ class StudentController extends Controller
     {
         $parent_menu = MenuItem::where('id', '=', 15)->first();
         $student = Auth::user();
-        return view('students.info', compact('parent_menu', 'student'));
+        $active_menu = MenuItem::where('title', '=', '基本信息')->first();
+        $active_menu_parent = $active_menu->parent_id;
+        return view('students.info', compact('parent_menu', 'student','active_menu', 'active_menu_parent'));
     }
 
     public  function update(Request $request)

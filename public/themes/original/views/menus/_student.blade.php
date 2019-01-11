@@ -24,11 +24,11 @@
                 {{--<li><a href="#">Maquetacion web</a></li>--}}
 
             @if($menu_item->children)
-                <ul class="submenu" style="@if($active_menu_parent == $menu_item->id)
+                <ul class="submenu" style="@if($options->active_menu_parent == $menu_item->id)
                         display: block
                         @endif">
                     @foreach($menu_item->children as $child)
-                        <li><a href="{{$child->link()}}" class="@if($active_menu->id == $child->id)
+                        <li><a href="{{$child->link()}}" class="@if($options->active_menu->id == $child->id)
                                     active
 @endif">{{$child->title}}</a></li>
                     @endforeach

@@ -6,7 +6,7 @@
 @section('body')
 
     <div class="col-sm-3">
-        @include('partials._studentsidebar')
+        @include('partials._studentsidebar', ['active_menu' => $active_menu, 'active_menu_parent'])
     </div>
     <div class="col-sm-7">
         @yield('content')

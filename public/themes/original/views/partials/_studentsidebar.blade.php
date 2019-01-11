@@ -1,5 +1,5 @@
 
-{{menu('student_sidebar', 'menus._student', ['active_menu' => $active_menu])}}
+{{menu('student_sidebar', 'menus._student', ['active_menu' => $active_menu, 'active_menu_parent' => $active_menu_parent])}}
 
 {{--<ul id="accordion" class="accordion">--}}
     {{--<li>--}}

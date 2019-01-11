@@ -27,8 +27,10 @@ class StudentController extends Controller
 //        return session()->get('message');
         $parent_menu = MenuItem::where('id', '=', 15)->first();
         $student = Auth::user();
+        $active_menu = MenuItem::where('title', '=', '基本信息')->first();
+        $active_menu_parent = $active_menu->parent_id;
 //        $uniclass = Uniclass::lists('year','id')->all();
-        return view('students.partials.info',compact('parent_menu', 'student'));
+        return view('students.partials.info',compact('parent_menu', 'student','active_menu', 'active_menu_parent'));
     }
 
     public function login()

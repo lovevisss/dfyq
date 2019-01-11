@@ -103,7 +103,7 @@ Route::post('message', ['as' => 'post_student_message', 'uses' => 'StudentContro
 Route::get('student/index', ['as' => 'student.index', 'uses' => 'StudentController@index']);
 Route::get('student/info', ['as' => 'student.info', 'uses' => 'StudentController@info']);
 Route::post('student/info', ['as' => 'student.update', 'uses' => 'StudentController@update']);
-Route::get('student/password', ['as' => 'studnet.password', 'uses' => 'StudentController@password']);
+Route::get('student/password', ['as' => 'student.password', 'uses' => 'StudentController@password']);
 Route::post('student/password', ['as' => 'student.updatePwd', 'uses' => 'StudentController@updatePwd']);
 Route::get('post', function()
 {

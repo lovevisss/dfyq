@@ -29,10 +29,10 @@ class StudentController extends Controller
         $student = Auth::user();
         $active_menu = MenuItem::where('title', '=', '基本信息')->first();
         $active_menu_parent = $active_menu->parent_id;
-//        $uniclass = Uniclass::lists('year','id')->all();
+//        $uniclass = Uniclass::lists('year','id')->all();  not work in current version
 
-        $roles = Role::lists('name','id')->all();
-        return view('students.partials.info',compact('parent_menu', 'student','active_menu', 'active_menu_parent', 'roles'));
+//        $roles = Role::lists('name','id')->all();
+        return view('students.partials.info',compact('parent_menu', 'student','active_menu', 'active_menu_parent'));
     }
 
     public function login()

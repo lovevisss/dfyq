@@ -26,10 +26,10 @@
     {!! Form::file('student_card', null, ['class' => 'form-control']) !!}
 </div>
 
-<div class="form-group">
-    {!! Form::label('role','角色:') !!}
-    {!! Form::file('role', $roles , ['class' => 'form-control']) !!}
-</div>
+{{--<div class="form-group">--}}
+    {{--{!! Form::label('role_id','角色:') !!}--}}
+    {{--{!! Form::file('role_id', $roles , null, ['class' => 'form-control']) !!}--}}
+{{--</div>--}}
 
 {!! Form::submit('更新',['class' => 'btn btn-primary']) !!}
 {!! Form::close()!!}

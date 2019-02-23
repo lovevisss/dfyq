@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Uniclass;
 use App\User;
 use Illuminate\Http\Request;
-
+use App\Role;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use TCG\Voyager\Models\MenuItem;
@@ -30,7 +30,9 @@ class StudentController extends Controller
         $active_menu = MenuItem::where('title', '=', '基本信息')->first();
         $active_menu_parent = $active_menu->parent_id;
 //        $uniclass = Uniclass::lists('year','id')->all();
-        return view('students.partials.info',compact('parent_menu', 'student','active_menu', 'active_menu_parent'));
+
+        $roles = Role::lists('name','id')->all();
+        return view('students.partials.info',compact('parent_menu', 'student','active_menu', 'active_menu_parent', 'roles'));
     }
 
     public function login()

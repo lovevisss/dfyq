@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StudentUpdateRequest;
 use App\Uniclass;
 use App\User;
 use Illuminate\Http\Request;
@@ -121,9 +122,12 @@ class StudentController extends Controller
         return view('students.partials.password', compact('parent_menu', 'student','active_menu', 'active_menu_parent'));
     }
 
-    public function updatePwd(Request $request)
+    public function updatePwd(StudentUpdateRequest $request)
     {
         $input = $request->all();
-        dd($request);
+        $user = Auth::user();
+        $user->password = $input['new_password'];
+        $user->save();
+        return Redirect::route('student.index');
     }
 }

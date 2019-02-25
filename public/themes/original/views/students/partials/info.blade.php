@@ -23,6 +23,9 @@
 </div>
 <div class="form-group">
     {!! Form::label('student_card','学生证:') !!}
+    @if($student->student_card)
+        <img src="{{$student->student_card}}" alt="" style="width:300px; height:300px;">
+    @endif
     {!! Form::file('student_card', null, ['class' => 'form-control']) !!}
 </div>
 

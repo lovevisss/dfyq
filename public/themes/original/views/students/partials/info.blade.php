@@ -2,7 +2,7 @@
 
 
 @section('content')
-    @if(\Illuminate\Contracts\Session\Session::has('deleted'))
+    @if(session()->exists('deleted'))
             <p class="bg-danger">{{session('deleted')}}</p>
         @endif
 {!! Form::model($student, ['url' => route('student.update'), 'files' => true])!!}

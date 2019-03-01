@@ -2,6 +2,9 @@
 
 
 @section('content')
+    @if(\Illuminate\Contracts\Session\Session::has('deleted'))
+            <p class="bg-danger">{{session('deleted')}}</p>
+        @endif
 {!! Form::model($student, ['url' => route('student.update'), 'files' => true])!!}
 
 <div class="form-group">

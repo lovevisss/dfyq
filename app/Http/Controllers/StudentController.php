@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use TCG\Voyager\Models\MenuItem;
 use App\Http\Requests\UserRegisterRequest;
+use Illuminate\Support\Facades\Session;
+
 class StudentController extends Controller
 {
     public function __construct()
@@ -110,6 +112,7 @@ class StudentController extends Controller
         }
         $user = User::find(Auth::id());
         $user->update($input);
+        Session::flash('deleted','done');
         return Redirect::route('student.index');
     }
 

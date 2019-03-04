@@ -25,7 +25,7 @@
          </div>
           <div class="form-group">
               {!! Form::label('student_card','学生证:') !!}
-              {!! Form::file('student_card', null, ['class' => 'form-control']) !!}
+              {!! Form::file('student_card',  ['class' => 'form-control']) !!}
           </div>
 
           {!! Form::submit('更新',['class' => 'btn btn-primary']) !!}

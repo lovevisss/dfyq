@@ -5,7 +5,7 @@
     @if(session()->exists('deleted'))
             <p class="bg-danger">{{session('deleted')}}</p>
         @endif
-{!! Form::model($student, ['url' => route('student.update'), 'files' => true])!!}
+{!! Form::model($student, ['url' => route('student.update'), 'files' => true, 'class' => 'dropzone'])!!}
 
 <div class="form-group">
     {!! Form::label('name', '名字:') !!}

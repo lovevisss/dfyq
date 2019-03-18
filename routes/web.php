@@ -91,6 +91,11 @@ Route::get('morphmany2', function()
         echo $user->name;
 });
 
+Route::get('chartjs', function()
+{
+    return view('chart.index');
+});
+
 
 Route::get('student/login', ['as' => 'student_login', 'uses' => 'StudentController@login']);
 Route::post('student/login', ['as' => 'post_student_login', 'uses' => 'StudentController@post_login']);

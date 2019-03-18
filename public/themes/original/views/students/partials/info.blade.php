@@ -24,7 +24,7 @@
     {!! Form::label('phone','手机:') !!}
     {!! Form::text('phone', null, ['class' => 'form-control']) !!}
 </div>
-<div class="form-group dropzone">
+<div class="form-group">
     {!! Form::label('student_card','学生证:') !!}
         <img src="{{$student->student_card ? $student->student_card : '暂无照片'}}" alt="" style="width:50px; height:50px;">
 

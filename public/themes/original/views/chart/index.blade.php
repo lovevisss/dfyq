@@ -27,6 +27,11 @@
                 :values="{{$posts->values()}}">
              
          </graph>
+
+        <graph :keys="['foo', 'bar']"
+               :values="[20,50]">
+
+        </graph>
     {{-- <canvas id="graph" width="600" height="400"></canvas> --}}
    {{--  <graph  :labels="['January', 'Febrbruary', 'March']" 
             :values="[10,42,4]"></graph>

@@ -19,7 +19,7 @@ export default Vue.extend({
 				
 			type: 'line',
 				data: {
-                labels: ["revenue"],
+                labels: this.keys,
                 // ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                 datasets: [{
                     label: '# of Votes',

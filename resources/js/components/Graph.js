@@ -18,74 +18,74 @@ export default Vue.extend({
 	mounted(){
 			Axios.get(this.url)
 				.then(function (res) {
-					console.log(res.data);
+                    this.render({
+
+                        type: 'line',
+                        data: {
+                            labels: Object.keys(res.data),
+                            // ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                            datasets: [{
+                                label: '# of Votes',
+                                data: Object.values(res.data),
+                                // [12, 19, 3, 5, 2, 3],
+                                backgroundColor: [
+                                    'rgba(255, 99, 132, 0.2)',
+                                    // this.color,
+                                    'rgba(54, 162, 235, 0.2)',
+                                    'rgba(255, 206, 86, 0.2)',
+                                    'rgba(75, 192, 192, 0.2)',
+                                    'rgba(153, 102, 255, 0.2)',
+                                    'rgba(255, 159, 64, 0.2)'
+                                ],
+                                borderColor: [
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)'
+                                ],
+                                borderWidth: 1,
+                                borderColor:"green",
+                            },
+
+                                // {
+                                //    label: 'Ohter',
+                                //    data: [56,54,33],
+                                //    // [12, 19, 3, 5, 2, 3],
+                                //    backgroundColor: [
+                                //        'rgba(255, 99, 132, 0.2)',
+                                //        // this.color,
+                                //        'rgba(54, 162, 235, 0.2)',
+                                //        'rgba(255, 206, 86, 0.2)',
+                                //        'rgba(75, 192, 192, 0.2)',
+                                //        'rgba(153, 102, 255, 0.2)',
+                                //        'rgba(255, 159, 64, 0.2)'
+                                //    ],
+                                //    borderColor: [
+                                //        'rgba(255, 99, 132, 1)',
+                                //        'rgba(54, 162, 235, 1)',
+                                //        'rgba(255, 206, 86, 1)',
+                                //        'rgba(75, 192, 192, 1)',
+                                //        'rgba(153, 102, 255, 1)',
+                                //        'rgba(255, 159, 64, 1)'
+                                //    ],
+                                //    borderWidth: 1,
+                                //    borderColor:"red",
+                                // },
+
+
+
+
+
+                            ]
+                        }
+
+
+
+                    });
                 });
-			this.render({
-				
-			type: 'line',
-				data: {
-                labels: this.keys,
-                // ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [{
-                    label: '# of Votes',
-                    data: this.values,
-                    // [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        // this.color,
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(255, 206, 86, 0.2)',
-                        'rgba(75, 192, 192, 0.2)',
-                        'rgba(153, 102, 255, 0.2)',
-                        'rgba(255, 159, 64, 0.2)'
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(255, 206, 86, 1)',
-                        'rgba(75, 192, 192, 1)',
-                        'rgba(153, 102, 255, 1)',
-                        'rgba(255, 159, 64, 1)'
-                    ],
-                    borderWidth: 1,
-                    borderColor:"green",
-                	},
 
-                	// {
-                 //    label: 'Ohter',
-                 //    data: [56,54,33],
-                 //    // [12, 19, 3, 5, 2, 3],
-                 //    backgroundColor: [
-                 //        'rgba(255, 99, 132, 0.2)',
-                 //        // this.color,
-                 //        'rgba(54, 162, 235, 0.2)',
-                 //        'rgba(255, 206, 86, 0.2)',
-                 //        'rgba(75, 192, 192, 0.2)',
-                 //        'rgba(153, 102, 255, 0.2)',
-                 //        'rgba(255, 159, 64, 0.2)'
-                 //    ],
-                 //    borderColor: [
-                 //        'rgba(255, 99, 132, 1)',
-                 //        'rgba(54, 162, 235, 1)',
-                 //        'rgba(255, 206, 86, 1)',
-                 //        'rgba(75, 192, 192, 1)',
-                 //        'rgba(153, 102, 255, 1)',
-                 //        'rgba(255, 159, 64, 1)'
-                 //    ],
-                 //    borderWidth: 1,
-                 //    borderColor:"red",
-                	// },
-
-
-
-
-
-                	]
-            		}
-				
-
-
-			});
 		},
 
 		methods:{

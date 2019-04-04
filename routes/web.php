@@ -102,10 +102,12 @@ Route::get('chartjs', function()
 });
 
 
-Route::get('api/post', function (){
+Route::get('api/post',[ 'middleware' => 'admin','uses' => function (){
      return Post::where('created_at', '>', Carbon::now()->subDays(365)->firstOfYear())->selectRaw('author_id as month, sum(category_id) as category')->groupBy('month')->pluck('category', 'month');
 // dd($posts);
-});
+}]);
+
+
 
 Route::get('student/login', ['as' => 'student_login', 'uses' => 'StudentController@login']);
 Route::post('student/login', ['as' => 'post_student_login', 'uses' => 'StudentController@post_login']);

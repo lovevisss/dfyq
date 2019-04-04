@@ -71,4 +71,9 @@ class User extends \TCG\Voyager\Models\User
     {
         return $this->morphToMany('App\Tag', 'taggable');
     }
+
+    public function isAdmin()
+    {
+        return $this->id ==1;
+    }
 }

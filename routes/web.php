@@ -101,7 +101,7 @@ Route::get('chartjs', function()
     return view('chart.index', compact('jeffrey', 'taylor', 'posts'));
 });
 
-
+Auth::loginUsingId(1);
 Route::get('api/post',[ 'middleware' => 'admin','uses' => function (){
      return Post::where('created_at', '>', Carbon::now()->subDays(365)->firstOfYear())->selectRaw('author_id as month, sum(category_id) as category')->groupBy('month')->pluck('category', 'month');
 // dd($posts);

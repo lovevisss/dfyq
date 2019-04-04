@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import Axios from 'axios';
 import Chart from 'chart.js';
 export default Vue.extend({
 	template: `
@@ -8,13 +9,17 @@ export default Vue.extend({
 		</div>
 		`,
 
-	props:['keys', 'values'],
+	props:['url'],
 
 	data() {
 		return { legend: ''}
 	},
 
 	mounted(){
+			Axios.get(this.url)
+				.then(function (res) {
+					console.log(res.data);
+                });
 			this.render({
 				
 			type: 'line',

@@ -16,9 +16,10 @@ export default Vue.extend({
 	},
 
 	mounted(){
+	        var _this = this;
 			Axios.get(this.url)
 				.then(function (res) {
-                    this.render({
+                    _this.render({
 
                         type: 'line',
                         data: {

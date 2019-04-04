@@ -5,11 +5,37 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <style>
+        .legend span{
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    <canvas id="graph"></canvas>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <div class="container" id="app">
+        <h1>Rocket League Wins Comparison</h1>
+   {{--  <wins-graph :player="{{ json_encode($jeffrey) }}"
+                :opponent="{{json_encode($taylor)}}">
+        
+    </wins-graph> --}}
+         <graph :keys="{{$posts->keys()}}"
+                :values="{{$posts->values()}}">
+             
+         </graph>
+    {{-- <canvas id="graph" width="600" height="400"></canvas> --}}
+   {{--  <graph  :labels="['January', 'Febrbruary', 'March']" 
+            :values="[10,42,4]"></graph>
+     <graph  :labels="['April', 'May', 'June']" 
+    :values="[100,412,43]"></graph> --}}
+    </div>
+x
+    <script src="/js/main.js"></script>
+   {{--  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
 
     <script>
         var ctx = document.getElementById('graph').getContext('2d');
@@ -49,6 +75,6 @@
                 }
             }
         });
-    </script>
+    </script> --}}
 </body>
 </html>

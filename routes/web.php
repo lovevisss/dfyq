@@ -1,5 +1,6 @@
 <?php
-
+use TCG\Voyager\Models\Post;
+use Carbon\Carbon;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -93,7 +94,12 @@ Route::get('morphmany2', function()
 
 Route::get('chartjs', function()
 {
-    return view('chart.index');
+    $jeffrey = ['name' => 'Jeffrey', 'wins' => 50];
+    $taylor = ['name' => 'Taylor', 'wins' => 80];
+
+    $posts = Post::where('created_at', '>', Carbon::now()->subDays(365)->firstOfYear())->selectRaw('author_id as month, sum(category_id) as category')->groupBy('month')->pluck('category', 'month');
+    // dd($posts);
+    return view('chart.index', compact('jeffrey', 'taylor', 'posts'));
 });
 
 

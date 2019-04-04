@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 177);
+/******/ 	return __webpack_require__(__webpack_require__.s = 179);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -44355,54 +44355,7 @@ webpackContext.id = 138;
 
 /***/ }),
 /* 139 */,
-/* 140 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Graph__ = __webpack_require__(136);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-/* harmony default export */ __webpack_exports__["default"] = (__WEBPACK_IMPORTED_MODULE_0__Graph__["default"].extend({
-    props: ['player', 'opponent'],
-
-    mounted: function mounted() {
-        this.render({
-
-            type: 'bar',
-
-            data: {
-                labels: ['Wins'],
-                // ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                datasets: [_defineProperty({
-                    label: this.player.name,
-                    data: [this.player.wins],
-                    // [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                    // 'rgba(255, 99, 132, 0.2)',
-                    this.color, 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'],
-                    borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'],
-                    borderWidth: 1
-                }, 'borderColor', "green"), _defineProperty({
-                    label: this.opponent.name,
-                    data: [this.opponent.wins],
-                    // [12, 19, 3, 5, 2, 3],
-                    backgroundColor: [
-                    // 'rgba(255, 99, 132, 0.2)',
-                    this.color, 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)', 'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)'],
-                    borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'],
-                    borderWidth: 1
-                }, 'borderColor', "red")]
-            }
-        });
-        // const chart = new Chart(this.$refs.canvas.getContext('2d'),datas);
-        // this.legend = chart.generateLegend();
-
-    }
-}));
-
-/***/ }),
+/* 140 */,
 /* 141 */,
 /* 142 */,
 /* 143 */,
@@ -44439,32 +44392,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 /* 174 */,
 /* 175 */,
 /* 176 */,
-/* 177 */
+/* 177 */,
+/* 178 */,
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(178);
+module.exports = __webpack_require__(136);
 
-
-/***/ }),
-/* 178 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Graph__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_WinsGraph__ = __webpack_require__(140);
-
-
-
-
-
-new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
-	el: '#app',
-	components: { Graph: __WEBPACK_IMPORTED_MODULE_1__components_Graph__["default"], WinsGraph: __WEBPACK_IMPORTED_MODULE_2__components_WinsGraph__["default"]
-		// components: { WinsGraph }
-	} });
 
 /***/ })
 /******/ ]);

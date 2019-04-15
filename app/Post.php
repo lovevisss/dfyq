@@ -15,4 +15,6 @@ class Post extends \TCG\Voyager\Models\Post
     {
         return $query->where('created_at', '>', Carbon::now()->subDays($days)->firstOfYear())->selectRaw('author_id as month, sum(category_id) as category')->groupBy('month');
     }
+
+
 }

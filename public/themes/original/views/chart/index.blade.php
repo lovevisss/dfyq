@@ -23,7 +23,7 @@
                 :opponent="{{json_encode($taylor)}}">
         
     </wins-graph> --}}
-         <revenue-graph url="api/post" range="10">
+         <revenue-graph url="api/post">
              
          </revenue-graph>
 

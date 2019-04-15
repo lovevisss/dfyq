@@ -10,7 +10,7 @@ export default Graph.extend({
 		<div>
 		    <div>
                 <label for="">How many days?</label>
-                <select>
+                <select v-model="range">
                     <option v-for="n in 365">{{n}}</option>
                 </select>
             </div>

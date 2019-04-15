@@ -9,7 +9,7 @@
 namespace App;
 
 
-class Post extends TCG\Voyager\Models\Post
+class Post extends \TCG\Voyager\Models\Post
 {
     public function scopeSpanningDays($query, $days)
     {

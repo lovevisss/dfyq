@@ -27,7 +27,11 @@ export default Graph.extend({
 
     methods:{
            fetchData(){
-               return Axios.get(this.url, {range: this.range});
+               return Axios.get(this.url, {
+                   params:{
+                       range: this.range,
+                   }
+               });
            },
 
             reload(){

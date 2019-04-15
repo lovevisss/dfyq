@@ -23,9 +23,9 @@
                 :opponent="{{json_encode($taylor)}}">
         
     </wins-graph> --}}
-         <graph url="api/post">
+         <revenue-graph url="api/post" range="10">
              
-         </graph>
+         </revenue-graph>
 
 
     {{-- <canvas id="graph" width="600" height="400"></canvas> --}}

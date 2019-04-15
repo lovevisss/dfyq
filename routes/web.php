@@ -1,5 +1,5 @@
 <?php
-use TCG\Voyager\Models\Post;
+use App\Post;
 use Carbon\Carbon;
 /*
 |--------------------------------------------------------------------------
@@ -103,8 +103,8 @@ Route::get('chartjs', function()
 
 Auth::loginUsingId(1);
 Route::get('api/post',[ 'middleware' => 'admin','uses' => function (){
-     return Post::where('created_at', '>', Carbon::now()->subDays(365)->firstOfYear())->selectRaw('author_id as month, sum(category_id) as category')->groupBy('month')->pluck('category', 'month');
-// dd($posts);
+     return Post::spanningDays(340)->pluck('category', 'month');
+
 }]);
 
 

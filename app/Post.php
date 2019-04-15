@@ -7,7 +7,7 @@
  */
 
 namespace App;
-
+use Carbon\Carbon;
 
 class Post extends \TCG\Voyager\Models\Post
 {

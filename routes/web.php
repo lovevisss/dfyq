@@ -102,7 +102,8 @@ Route::get('chartjs', function()
 
 Auth::loginUsingId(1);
 Route::get('api/post',[ 'middleware' => 'admin','uses' => function (){
-     return Post::spanningDays(340)->pluck('category', 'month');
+        $range = request('range')?:340;
+     return Post::spanningDays($range)->pluck('category', 'month');
 
 }]);
 

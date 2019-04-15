@@ -25,6 +25,7 @@ export default Vue.extend({
 			render(datas){
 					var context = this.$refs.canvas.getContext('2d');
 					const chart = new Chart(context, datas);
+					this.chart = chart;
 					this.legend = chart.generateLegend();
 			},
 

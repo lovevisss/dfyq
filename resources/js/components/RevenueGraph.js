@@ -1,6 +1,7 @@
 import Graph from './Graph';
 
 
+import Axios from 'axios';
 
 
 export default Graph.extend({
@@ -10,7 +11,7 @@ export default Graph.extend({
 		<div>
 		    <div>
                 <label for="">How many days?</label>
-                <select v-model="range">
+                <select v-model="range" @change="reload">
                     <option v-for="n in 365">{{n}}</option>
                 </select>
             </div>
@@ -22,5 +23,19 @@ export default Graph.extend({
 
     props:{
         range:{default: 30}
+    },
+
+    methods:{
+           fetchData(){
+               return Axios.get(this.url, {range: this.range});
+           },
+
+            reload(){
+                this.chart.destroy();
+                this.load();
+            },
+
+
+
     }
 });

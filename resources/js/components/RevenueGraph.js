@@ -34,10 +34,7 @@ export default Graph.extend({
                });
            },
 
-            reload(){
-                this.chart.destroy();
-                this.load();
-            },
+
 
 
 

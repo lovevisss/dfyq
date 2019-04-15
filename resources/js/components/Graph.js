@@ -107,6 +107,10 @@ export default Vue.extend({
 
                 return Axios.get(this.url);
 
+            },
+            reload(){
+                this.chart.destroy();
+                this.load();
             }
 		},
 		

@@ -13,6 +13,6 @@ class Post extends \TCG\Voyager\Models\Post
 {
     public function scopeSpanningDays($query, $days)
     {
-        return $query->oldest()->where('created_at', '>', Carbon::now()->subDays($days)->firstOfYear())->selectRaw('author_id as month, sum(category_id) as category')->groupBy('month');
+        return $query->where('created_at', '>', Carbon::now()->subDays($days)->firstOfYear())->selectRaw('author_id as month, sum(category_id) as category')->groupBy('month');
     }
 }

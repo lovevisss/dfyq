@@ -10,7 +10,9 @@ export default Graph.extend({
 		<div>
 		    <div>
                 <label for="">How many days?</label>
-                <select name="" id="" v-for="n in 365">{{n}}</select>
+                <select>
+                    <option v-for="n in 365">{{n}}</option>
+                </select>
             </div>
 			<canvas width="800" height="600" ref="canvas"></canvas>
 			<div class="legend" v-html="legend">{{ legend }}</div>

@@ -30,7 +30,7 @@ Route::get('user', function()
     return $user->nightenrolls;
 });
 Route::get('test', function(){
-    return view('index');
+    return view('csstest');
 });
 
 Route::get('class', function()
@@ -107,7 +107,15 @@ Route::get('api/post',[ 'middleware' => 'admin','uses' => function (){
 
 }]);
 
+Route::get('formobj', function(){
+    return view('form.index');
+});
 
+Route::post('/formpost', function ($request){
+    $form = new \App\Http\Forms\PublishPostForm;
+    $form->save();
+    return 'Success!';
+});
 
 Route::get('student/login', ['as' => 'student_login', 'uses' => 'StudentController@login']);
 Route::post('student/login', ['as' => 'post_student_login', 'uses' => 'StudentController@post_login']);

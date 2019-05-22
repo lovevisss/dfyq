@@ -135,6 +135,11 @@ Route::get('post', function()
    return 'post page';
 });
 
+Route::get('mail', function ()
+{
+   \Illuminate\Support\Facades\Mail::to('530822987@qq.com')->send(new \App\Mail\TestMail());
+});
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
